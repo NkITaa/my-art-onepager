@@ -1,7 +1,7 @@
 import Footer from "../Footer";
 import VOV from "./VOV";
 
-function Errors() {
+function NotFound() {
   return (
     <>
       <VOV />
@@ -10,4 +10,4 @@ function Errors() {
   );
 }
 
-export default Errors;
+export default NotFound;
