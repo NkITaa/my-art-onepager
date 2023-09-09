@@ -1,5 +1,13 @@
+import Footer from "../Footer";
+import DownloadMe from "./DownloadMe";
+
 function Download() {
-  return <h1>Download</h1>;
+  return (
+    <>
+      <DownloadMe />
+      <Footer />
+    </>
+  );
 }
 
 export default Download;
