@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <>
@@ -9,10 +11,18 @@ function Footer() {
                 Informationen
               </div>
               <ul className="flex-col justify-start items-start gap-3 flex">
-                <li className=" text-xl  leading-loose">About us</li>
-                <li className=" text-xl  leading-loose">Kontakt</li>
-                <li className=" text-xl  leading-loose">Presse</li>
-                <li className=" text-xl  leading-loose">FAQ</li>
+                <li className=" text-xl  leading-loose">
+                  <Link to="/about">About Us</Link>
+                </li>
+                <li className=" text-xl  leading-loose">
+                  <Link to="/contact">Kontakt</Link>
+                </li>
+                <li className=" text-xl  leading-loose">
+                  <Link to="/press">Presse</Link>
+                </li>
+                <li className=" text-xl  leading-loose">
+                  <Link to="/faq">FAQ</Link>
+                </li>
               </ul>
             </div>
             <div className="flex-col justify-start items-start gap-3 inline-flex">
