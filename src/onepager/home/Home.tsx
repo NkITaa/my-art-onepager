@@ -1,3 +1,4 @@
+import Download from "../Download";
 import Banner from "./Banner";
 import Explore from "./Explore";
 import Infos from "./Infos";
@@ -12,6 +13,7 @@ function Home() {
       <Infos />
       <Explore />
       <Referals />
+      <Download />
     </>
   );
 }
