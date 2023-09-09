@@ -1,5 +1,11 @@
+import Banner from "./Banner";
+
 function Home() {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }
 
 export default Home;
