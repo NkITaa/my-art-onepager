@@ -1,5 +1,15 @@
+import Footer from "../Footer";
+import Presskit from "../Presskit";
+import Portrait from "./Portrait";
+
 function Press() {
-  return <h1>Press</h1>;
+  return (
+    <>
+      <Portrait />
+      <Presskit />
+      <Footer />
+    </>
+  );
 }
 
 export default Press;
