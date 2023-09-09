@@ -1,4 +1,5 @@
 import Download from "../Download";
+import Footer from "../Footer";
 import Banner from "./Banner";
 import Explore from "./Explore";
 import Infos from "./Infos";
@@ -14,6 +15,7 @@ function Home() {
       <Explore />
       <Referals />
       <Download />
+      <Footer />
     </>
   );
 }
