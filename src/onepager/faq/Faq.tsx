@@ -1,5 +1,15 @@
+import Footer from "../Footer";
+import Presskit from "../Presskit";
+import Questions from "./Questions";
+
 function Faq() {
-  return <h1>Faq</h1>;
+  return (
+    <>
+      <Questions />
+      <Presskit />
+      <Footer />
+    </>
+  );
 }
 
 export default Faq;
