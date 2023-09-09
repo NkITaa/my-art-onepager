@@ -3,7 +3,7 @@ import Footer from "../Footer";
 import Banner from "./Banner";
 import Explore from "./Explore";
 import Infos from "./Infos";
-import Referals from "./Referals";
+import Referals from "./Referals/Referals";
 
 function Home() {
   return (
