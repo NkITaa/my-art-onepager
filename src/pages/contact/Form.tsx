@@ -1,3 +1,5 @@
+import Button from "../../organisms/Button";
+
 function Form() {
   return (
     <>
@@ -98,11 +100,7 @@ function Form() {
                   </span>
                 </div>
               </div>
-              <div className="px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center inline-flex">
-                <div className="text-zinc-100 text-xl font-bold leading-loose">
-                  Nachricht absenden
-                </div>
-              </div>
+              <Button link="/download" text="Nachricht absenden" />
             </div>
           </div>
         </div>

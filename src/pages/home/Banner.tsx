@@ -26,7 +26,7 @@ function Banner() {
                 App.
               </span>
             </div>
-            <Button />
+            <Button link="/download" text="Download" />
           </div>
           <div className="py-10 justify-start items-start flex">
             <img

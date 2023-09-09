@@ -1,3 +1,5 @@
+import Button from "../organisms/Button";
+
 function Presskit() {
   return (
     <>
@@ -11,12 +13,9 @@ function Presskit() {
               Für Deine Berichterstattung über MyArt
             </div>
           </div>
+
           <div className="self-stretch h-16 flex-col justify-start items-center flex">
-            <div className="px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center inline-flex">
-              <div className="text-zinc-100 text-xl font-bold leading-loose">
-                Presseset Download
-              </div>
-            </div>
+            <Button link="/download" text="Presseset Download" />
           </div>
         </div>
       </div>

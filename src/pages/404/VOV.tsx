@@ -1,3 +1,5 @@
+import Button from "../../organisms/Button";
+
 function VOV() {
   return (
     <>
@@ -10,16 +12,8 @@ function VOV() {
             </div>
           </div>
           <div className="self-stretch justify-center items-start gap-4 inline-flex">
-            <div className="px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center flex">
-              <div className="text-zinc-100 text-xl font-bold leading-loose">
-                zur Homepage
-              </div>
-            </div>
-            <div className="px-8 py-4 bg-neutral-50 rounded-xl border border-gray-400 justify-center items-center flex">
-              <div className=" text-xl font-bold leading-loose">
-                Melde einen Bug
-              </div>
-            </div>
+            <Button link="/" text="Zur Homepage" />
+            <Button link="/download" text="Melde einen Bug" />
           </div>
         </div>
       </div>

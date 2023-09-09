@@ -36,7 +36,7 @@ function Header() {
                 <Link to="/faq">FAQ</Link>
               </li>
               <li className="text-xl leading-loose">
-                <Button />
+                <Button link="/download" text="Download" />
               </li>
             </ul>
           </nav>
