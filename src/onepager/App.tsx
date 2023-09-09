@@ -6,7 +6,7 @@ import Contact from "./contact/Contact";
 import Press from "./press/Press";
 import Faq from "./faq/Faq";
 import Download from "./download/Download";
-import VOV from "./404/404";
+import VOV from "./Errors/VOV";
 
 function App() {
   return (
