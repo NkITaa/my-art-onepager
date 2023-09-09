@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "../../organisms/Button";
 
 function Banner() {
   return (
@@ -25,13 +26,7 @@ function Banner() {
                 App.
               </span>
             </div>
-            <Link to="/download">
-              <div className="px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center inline-flex">
-                <div className="text-zinc-100 text-xl font-bold leading-loose">
-                  Download
-                </div>
-              </div>
-            </Link>
+            <Button />
           </div>
           <div className="py-10 justify-start items-start flex">
             <img

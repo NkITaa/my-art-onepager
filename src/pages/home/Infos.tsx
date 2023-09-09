@@ -1,3 +1,5 @@
+import ExtendableButton from "../../organisms/ExtendableButton";
+
 function Infos() {
   return (
     <>
@@ -42,14 +44,7 @@ function Infos() {
                 </div>
               </div>
             </div>
-            <div className="self-stretch h-16 flex-col justify-center items-start gap-2.5 flex">
-              <div className="px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center gap-2 inline-flex">
-                <div className="text-zinc-100 text-xl font-bold leading-loose">
-                  mehr Informationen
-                </div>
-                <div className="w-5 h-5 justify-center items-center flex" />
-              </div>
-            </div>
+            <ExtendableButton />
           </div>
         </div>
       </div>

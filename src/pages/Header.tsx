@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import Button from "../organisms/Button";
 
 function Header() {
   return (
@@ -34,13 +35,9 @@ function Header() {
               <li className="text-xl leading-loose">
                 <Link to="/faq">FAQ</Link>
               </li>
-              <Link to="/download">
-                <li className="px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center flex">
-                  <div className="text-zinc-100 text-xl font-bold leading-loose">
-                    Download
-                  </div>
-                </li>
-              </Link>
+              <li className="text-xl leading-loose">
+                <Button />
+              </li>
             </ul>
           </nav>
         </div>
