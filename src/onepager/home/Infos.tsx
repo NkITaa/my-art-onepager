@@ -13,30 +13,30 @@ function Infos() {
           </div>
           <div className="grow shrink basis-0 flex-col justify-center items-start gap-6 inline-flex">
             <div className="self-stretch h-[110px] flex-col justify-center items-start gap-3 flex">
-              <div className="text-neutral-900 text-5xl font-bold leading-[58px]">
+              <div className="text-5xl font-bold leading-[58px]">
                 Kunstmarkplatz
               </div>
-              <div className="self-stretch text-neutral-900 text-2xl font-bold leading-10 tracking-widest">
+              <div className="self-stretch text-2xl font-bold leading-10 tracking-widest">
                 kaufe und verkaufe deine Kunst
               </div>
             </div>
             <div className="self-stretch h-[120px] flex-col justify-center items-start gap-3 flex">
               <div className="self-stretch justify-start items-center gap-3 inline-flex">
                 <div className="w-5 h-5 relative" />
-                <div className="grow shrink basis-0 text-neutral-900 text-xl font-normal leading-loose">
+                <div className="grow shrink basis-0 text-xl  leading-loose">
                   Durchstöbere eine umfangreiche Sammlung von Werken.
                 </div>
               </div>
               <div className="self-stretch justify-start items-center gap-3 inline-flex">
                 <div className="w-5 h-5 relative" />
-                <div className="grow shrink basis-0 text-neutral-900 text-xl font-normal leading-loose">
+                <div className="grow shrink basis-0 text-xl  leading-loose">
                   MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
                   Künstlern.
                 </div>
               </div>
               <div className="self-stretch justify-start items-center gap-3 inline-flex">
                 <div className="w-5 h-5 relative" />
-                <div className="grow shrink basis-0 text-neutral-900 text-xl font-normal leading-loose">
+                <div className="grow shrink basis-0 text-xl  leading-loose">
                   Erwerben oder selbst zum Verkauf anzubieten, wobei der gesamte
                   Prozess sicher.
                 </div>

@@ -11,18 +11,18 @@ function DownloadMe() {
           </div>
           <div className="grow shrink basis-0 flex-col justify-center items-start gap-16 inline-flex">
             <div className="self-stretch h-[58px] flex-col justify-center items-start gap-3 flex">
-              <div className="self-stretch text-neutral-900 text-5xl font-bold leading-[58px]">
+              <div className="self-stretch text-5xl font-bold leading-[58px]">
                 Downloade dir MyArt
               </div>
             </div>
             <div className="self-stretch h-[233.70px] flex-col justify-end items-start gap-3 flex">
-              <div className="self-stretch text-neutral-900 text-2xl font-bold leading-10 tracking-widest">
+              <div className="self-stretch text-2xl font-bold leading-10 tracking-widest">
                 Download per QR-Code
               </div>
               <div className="w-[181.70px] h-[181.70px] relative"></div>
             </div>
             <div className="self-stretch h-[114.40px] flex-col justify-center items-start gap-3 flex">
-              <div className="self-stretch text-neutral-900 text-2xl font-bold leading-10 tracking-widest">
+              <div className="self-stretch text-2xl font-bold leading-10 tracking-widest">
                 Download in den Stores
               </div>
               <div className="self-stretch justify-start items-start gap-3 inline-flex">

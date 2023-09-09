@@ -4,7 +4,7 @@ function Referals() {
       <div className="w-full h-[494px] px-40 bg-white flex-col justify-center items-center inline-flex">
         <div className="self-stretch h-[494px] py-16 flex-col justify-start items-center gap-16 flex">
           <div className="self-stretch h-[58px] flex-col justify-start items-center flex">
-            <div className="self-stretch text-center text-neutral-900 text-5xl font-bold leading-[58px]">
+            <div className="self-stretch text-center text-5xl font-bold leading-[58px]">
               bekannt aus folgenden Berichten
             </div>
           </div>
@@ -17,7 +17,7 @@ function Referals() {
                 />
               </div>
               <div className="self-stretch justify-center items-center gap-3 inline-flex">
-                <div className="grow shrink basis-0 text-neutral-900 text-xl font-bold leading-loose">
+                <div className="grow shrink basis-0 text-xl font-bold leading-loose">
                   “Die Kunst von morgen. MyArt die neue App”
                 </div>
                 <div className="self-stretch flex-col justify-end items-end inline-flex">
@@ -33,7 +33,7 @@ function Referals() {
                 />
               </div>
               <div className="self-stretch justify-center items-center gap-3 inline-flex">
-                <div className="grow shrink basis-0 text-neutral-900 text-xl font-bold leading-loose">
+                <div className="grow shrink basis-0 text-xl font-bold leading-loose">
                   “Das ist sehr stark Menschenskindaaaaa”
                 </div>
                 <div className="self-stretch flex-col justify-end items-end inline-flex">
@@ -49,7 +49,7 @@ function Referals() {
                 />
               </div>
               <div className="self-stretch justify-center items-center gap-3 inline-flex">
-                <div className="grow shrink basis-0 text-neutral-900 text-xl font-bold leading-loose">
+                <div className="grow shrink basis-0 text-xl font-bold leading-loose">
                   “Lol vallah beschder Zeitungsbeitrag”
                 </div>
                 <div className="self-stretch flex-col justify-end items-end inline-flex">

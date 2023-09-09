@@ -3,11 +3,9 @@ function LegalTemplate() {
     <>
       <div className="w-full h-[1234px] px-40 bg-slate-100 justify-center items-start inline-flex">
         <div className="grow shrink basis-0 py-16 flex-col justify-start items-start gap-6 inline-flex">
-          <div className="text-neutral-900 text-5xl font-bold leading-[58px]">
-            Impressum
-          </div>
+          <div className="text-5xl font-bold leading-[58px]">Impressum</div>
           <div className="self-stretch">
-            <span className="text-neutral-900 text-xl font-normal leading-loose">
+            <span className="text-xl  leading-loose">
               Angaben gemäß § 5 TMG:
               <br />
               <br />
@@ -30,11 +28,11 @@ function LegalTemplate() {
               <br />
               E-Mail:{" "}
             </span>
-            <span className="text-neutral-900 text-xl font-normal leading-loose">
+            <span className="text-xl  leading-loose">
               kontakt@myart.de
               <br />
             </span>
-            <span className="text-neutral-900 text-xl font-normal leading-loose">
+            <span className="text-xl  leading-loose">
               <br />
               Vertretung:
               <br />

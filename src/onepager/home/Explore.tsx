@@ -5,7 +5,7 @@ function Explore() {
         <div className="self-stretch h-[1052px] py-16 flex-col justify-center items-center gap-16 flex">
           <div className="self-stretch h-[110px] flex-col justify-start items-center gap-3 flex">
             <div className="self-stretch justify-center items-center gap-6 inline-flex">
-              <div className="text-neutral-900 text-5xl font-bold leading-[58px]">
+              <div className="text-5xl font-bold leading-[58px]">
                 Entdecke Kunst
               </div>
               <div className="w-12 h-12 pb-[0.20px] flex-col justify-start items-center gap-[4.80px] inline-flex">
@@ -15,7 +15,7 @@ function Explore() {
                 <div className="w-7 h-[5px] bg-zinc-300 rounded-full" />
               </div>
             </div>
-            <div className="text-center text-neutral-900 text-2xl font-bold leading-10 tracking-widest">
+            <div className="text-center text-2xl font-bold leading-10 tracking-widest">
               Browse durch die Screens von MyArt
             </div>
           </div>

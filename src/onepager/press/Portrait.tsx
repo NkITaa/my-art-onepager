@@ -4,15 +4,15 @@ function Portrait() {
       <div className="w-full h-[718px] px-40 bg-slate-100 flex-col justify-start items-center inline-flex">
         <div className="self-stretch h-[718px] py-16 flex-col justify-center items-center gap-16 flex">
           <div className="self-stretch h-[110px] flex-col justify-start items-start gap-3 flex">
-            <div className="self-stretch text-neutral-900 text-5xl font-bold leading-[58px]">
+            <div className="self-stretch text-5xl font-bold leading-[58px]">
               Kurzportrait
             </div>
-            <div className="self-stretch text-neutral-900 text-2xl font-bold leading-10 tracking-widest">
+            <div className="self-stretch text-2xl font-bold leading-10 tracking-widest">
               Fakten zur Berichterstattung
             </div>
           </div>
           <div className="self-stretch justify-center items-center inline-flex">
-            <div className="grow shrink basis-0 text-neutral-900 text-xl font-normal leading-loose">
+            <div className="grow shrink basis-0 text-xl  leading-loose">
               Die MyArt Digital Solutions GmbH ist ein Technologie-Unternehmen
               im Kunstsektor mit Sitz in Berlin, gegründet im Jahr 2020 von den
               Schwestern Lena und Sophie Kunstfreund, zusammen mit Marco
