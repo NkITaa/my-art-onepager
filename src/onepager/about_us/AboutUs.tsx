@@ -1,5 +1,16 @@
+import Download from "../Download";
+import Footer from "../Footer";
+import Infos from "./Infos";
+
 function AboutUs() {
-  return <h1>About Us</h1>;
+  return (
+    <>
+      <Infos />
+      <Infos />
+      <Download />
+      <Footer />
+    </>
+  );
 }
 
 export default AboutUs;
