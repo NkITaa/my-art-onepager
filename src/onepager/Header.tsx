@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 function Header() {
   return (
     <>
-      <header className="w-[2336px] h-28 px-40 py-6 bg-white justify-center items-center inline-flex">
+      <header className="w-full h-28 px-40 py-6 bg-white justify-center items-center inline-flex">
         <div className="grow shrink basis-0 h-16 justify-start items-center flex">
           <div className="grow shrink basis-0 h-16 justify-start items-start flex">
             <div className="justify-center items-end gap-4 flex">
