@@ -1,6 +1,6 @@
 import { Link, To } from "react-router-dom";
 
-function Button({ link, text }: { link: To; text: String }) {
+function Button({ link, text }: { link: To; text: string }) {
   return (
     <>
       <Link to={link}>
