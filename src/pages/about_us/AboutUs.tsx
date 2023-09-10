@@ -5,8 +5,8 @@ import Infos from "./Infos";
 function AboutUs() {
   return (
     <>
-      <Infos />
-      <Infos />
+      <Infos align="right" />
+      <Infos align="left" />
       <Download />
       <Footer />
     </>

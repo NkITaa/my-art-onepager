@@ -3,9 +3,9 @@ import Button from "../organisms/Button";
 function Presskit() {
   return (
     <>
-      <div className="w-full h-[366px] px-40 bg-white flex-col justify-start items-start inline-flex">
-        <div className="self-stretch h-[366px] py-16 flex-col justify-start items-start gap-16 flex">
-          <div className="self-stretch h-[110px] flex-col justify-start items-center gap-3 flex">
+      <div className="w-full  px-40 bg-white flex-col justify-start items-start inline-flex">
+        <div className="self-stretch py-16 flex-col justify-start items-start gap-16 flex">
+          <div className="self-stretch  flex-col justify-start items-center gap-3 flex">
             <div className="self-stretch text-center  text-5xl font-bold leading-[58px]">
               Downloade Dein Presseset
             </div>

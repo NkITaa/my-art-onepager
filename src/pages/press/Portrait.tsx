@@ -1,8 +1,8 @@
 function Portrait() {
   return (
     <>
-      <div className="w-full h-[718px] px-40 bg-slate-100 flex-col justify-start items-center inline-flex">
-        <div className="self-stretch h-[718px] py-16 flex-col justify-center items-center gap-16 flex">
+      <div className="w-full px-40 bg-slate-100 flex-col justify-start items-center inline-flex">
+        <div className="self-stretch py-16 flex-col justify-center items-center gap-16 flex">
           <div className="self-stretch h-[110px] flex-col justify-start items-start gap-3 flex">
             <div className="self-stretch text-5xl font-bold leading-[58px]">
               Kurzportrait

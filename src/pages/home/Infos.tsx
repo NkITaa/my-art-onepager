@@ -15,7 +15,7 @@ function Infos({
 }) {
   return (
     <>
-      <div className="w-[2336px] h-[878px] px-40 bg-white justify-center items-center inline-flex">
+      <div className="px-40 bg-white justify-center items-center inline-flex">
         <div className="grow shrink basis-0 h-[878px] py-16 justify-center items-center gap-16 flex">
           {align === "left" ? (
             <div className="justify-center items-center flex">
@@ -34,7 +34,7 @@ function Infos({
                 {subtitle}
               </div>
             </div>
-            <div className="self-stretch h-[120px] flex-col justify-center items-start gap-3 flex">
+            <div className="self-stretch max-h-fit flex-col justify-center items-start gap-3 flex">
               <div className="self-stretch justify-start items-center gap-3 inline-flex">
                 <div className="w-5 h-5 relative" />
                 <div className="grow shrink basis-0 text-xl  leading-loose">

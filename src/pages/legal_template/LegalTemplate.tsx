@@ -1,7 +1,7 @@
 function LegalTemplate() {
   return (
     <>
-      <div className="w-full h-[1234px] px-40 bg-slate-100 justify-center items-start inline-flex">
+      <div className="w-full px-40 bg-slate-100 justify-center items-start inline-flex">
         <div className="grow shrink basis-0 py-16 flex-col justify-start items-start gap-6 inline-flex">
           <div className="text-5xl font-bold leading-[58px]">Impressum</div>
           <div className="self-stretch">

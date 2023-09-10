@@ -1,8 +1,16 @@
-function Infos() {
+function Infos({ align }: { align: "left" | "right" }) {
   return (
     <>
-      <div className="w-full h-[528px] px-40 bg-slate-100 flex-col justify-center items-center inline-flex">
+      <div className="w-full px-40 bg-slate-100 flex-col justify-center items-center inline-flex">
         <div className="self-stretch py-16 justify-center items-center gap-16 inline-flex">
+          {align === "left" ? (
+            <div className="grow shrink basis-0 flex-col justify-start items-start inline-flex">
+              <img
+                className="w-[668px] h-[400px] relative rounded-2xl"
+                src="https://via.placeholder.com/668x400"
+              />
+            </div>
+          ) : null}
           <div className="grow shrink basis-0 flex-col justify-center items-start gap-6 inline-flex">
             <div className="self-stretch h-[110px] flex-col justify-start items-start gap-3 flex">
               <div className="self-stretch  text-5xl font-bold leading-[58px]">
@@ -23,12 +31,15 @@ function Infos() {
               Welt zu schlagen.{" "}
             </div>
           </div>
-          <div className="grow shrink basis-0 flex-col justify-start items-start inline-flex">
-            <img
-              className="w-[668px] h-[400px] relative rounded-2xl"
-              src="https://via.placeholder.com/668x400"
-            />
-          </div>
+
+          {align === "right" ? (
+            <div className="grow shrink basis-0 flex-col justify-start items-start inline-flex">
+              <img
+                className="w-[668px] h-[400px] relative rounded-2xl"
+                src="https://via.placeholder.com/668x400"
+              />
+            </div>
+          ) : null}
         </div>
       </div>
     </>

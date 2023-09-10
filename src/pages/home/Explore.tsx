@@ -1,8 +1,8 @@
 function Explore() {
   return (
     <>
-      <div className="w-full h-[1052px] px-40 bg-slate-100 flex-col justify-center items-center inline-flex">
-        <div className="self-stretch h-[1052px] py-16 flex-col justify-center items-center gap-16 flex">
+      <div className="w-full px-40 bg-slate-100 flex-col justify-center items-center inline-flex">
+        <div className="self-stretch py-16 flex-col justify-center items-center gap-16 flex">
           <div className="self-stretch h-[110px] flex-col justify-start items-center gap-3 flex">
             <div className="self-stretch justify-center items-center gap-6 inline-flex">
               <div className="text-5xl font-bold leading-[58px]">

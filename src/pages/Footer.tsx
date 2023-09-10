@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer className="w-full h-[494px] px-40 bg-white flex-col justify-center items-center inline-flex">
-        <div className="self-stretch h-[494px] py-16 flex-col justify-start items-center gap-16 flex">
+      <footer className="w-full  px-40 bg-white flex-col justify-center items-center inline-flex">
+        <div className="self-stretch py-16 flex-col justify-start items-center gap-16 flex">
           <div className="self-stretch justify-between items-start inline-flex">
             <div className="flex-col justify-start items-start gap-3 inline-flex">
               <div className=" text-xl font-bold leading-loose">
