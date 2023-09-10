@@ -84,7 +84,6 @@ function Form() {
               className="appearance-none block w-[328px] peer p-4 bg-neutral-50 rounded-xl border text-gray-700 border-gray-200 justify-between items-center gap-2 "
               name="phonenumber"
               type="text"
-              placeholder="Doe"
               value={values.phonenumber}
               onChange={onChange}
               minLength={4}
@@ -112,10 +111,11 @@ function Form() {
             </p>
           </div>
         </div>
-        <input type="submit" value="Submit" />
+
         <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
           <div className="self-stretch h-[102px] flex-col justify-start items-start gap-3 flex">
             <div className="self-stretch justify-start items-center gap-2 inline-flex">
+              <input type="checkbox" className="default:ring-2 ..." />
               <div className="w-5 h-5 relative" />
               <div>
                 <span className=" text-base  leading-relaxed">
@@ -130,7 +130,7 @@ function Form() {
                 </span>
               </div>
             </div>
-            <Button link="/download" text="Nachricht absenden" />
+            <Button link={undefined} text="Nachricht absenden" />
           </div>
         </div>
       </form>
