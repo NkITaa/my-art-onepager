@@ -11,9 +11,18 @@ function Referals() {
             </div>
           </div>
           <div className="self-stretch justify-center items-start gap-6 inline-flex">
-            <Paper />
-            <Paper />
-            <Paper />
+            <Paper
+              link="https://via.placeholder.com/216x52"
+              quotation="“Die Kunst von morgen. MyArt die neue App”"
+            />
+            <Paper
+              link="https://via.placeholder.com/216x52"
+              quotation="“Die Kunst von morgen. MyArt die neue App”"
+            />
+            <Paper
+              link="https://via.placeholder.com/216x52"
+              quotation="“Die Kunst von morgen. MyArt die neue App”"
+            />
           </div>
         </div>
       </div>
