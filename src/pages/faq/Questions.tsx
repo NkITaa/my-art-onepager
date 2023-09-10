@@ -9,54 +9,56 @@ function Questions() {
             Fragen & Antworten
           </div>
         </div>
-        <Question
-          question="Wie kann ich ein Konto bei MyArt erstellen?"
-          answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
+        <ul className="w-full flex-col justify-start items-start gap-16 inline-flex">
+          <Question
+            question="Wie kann ich ein Konto bei MyArt erstellen?"
+            answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
             Anweisungen. Innerhalb weniger Minuten können Sie beginnen, die Welt
             von MyArt zu erkunden."
-        />
-        <Question
-          question="Wie kann ich ein Konto bei MyArt erstellen?"
-          answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
+          />
+          <Question
+            question="Wie kann ich ein Konto bei MyArt erstellen?"
+            answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
             Anweisungen. Innerhalb weniger Minuten können Sie beginnen, die Welt
             von MyArt zu erkunden."
-        />
-        <Question
-          question="Wie kann ich ein Konto bei MyArt erstellen?"
-          answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
+          />
+          <Question
+            question="Wie kann ich ein Konto bei MyArt erstellen?"
+            answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
             Anweisungen. Innerhalb weniger Minuten können Sie beginnen, die Welt
             von MyArt zu erkunden."
-        />
-        <Question
-          question="Wie kann ich ein Konto bei MyArt erstellen?"
-          answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
+          />
+          <Question
+            question="Wie kann ich ein Konto bei MyArt erstellen?"
+            answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
             Anweisungen. Innerhalb weniger Minuten können Sie beginnen, die Welt
             von MyArt zu erkunden."
-        />
-        <Question
-          question="Wie kann ich ein Konto bei MyArt erstellen?"
-          answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
+          />
+          <Question
+            question="Wie kann ich ein Konto bei MyArt erstellen?"
+            answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
             Anweisungen. Innerhalb weniger Minuten können Sie beginnen, die Welt
             von MyArt zu erkunden."
-        />
-        <Question
-          question="Wie kann ich ein Konto bei MyArt erstellen?"
-          answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
+          />
+          <Question
+            question="Wie kann ich ein Konto bei MyArt erstellen?"
+            answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
             Anweisungen. Innerhalb weniger Minuten können Sie beginnen, die Welt
             von MyArt zu erkunden."
-        />
-        <Question
-          question="Wie kann ich ein Konto bei MyArt erstellen?"
-          answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
+          />
+          <Question
+            question="Wie kann ich ein Konto bei MyArt erstellen?"
+            answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
             Anweisungen. Innerhalb weniger Minuten können Sie beginnen, die Welt
             von MyArt zu erkunden."
-        />
-        <Question
-          question="Wie kann ich ein Konto bei MyArt erstellen?"
-          answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
+          />
+          <Question
+            question="Wie kann ich ein Konto bei MyArt erstellen?"
+            answer="Gehen Sie einfach auf unsere Anmeldeseite und folgen Sie den
             Anweisungen. Innerhalb weniger Minuten können Sie beginnen, die Welt
             von MyArt zu erkunden."
-        />
+          />
+        </ul>
       </div>
     </>
   );
