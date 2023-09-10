@@ -9,9 +9,36 @@ function Home() {
   return (
     <>
       <Banner />
-      <Infos />
-      <Infos />
-      <Infos />
+      <Infos
+        align="left"
+        image="https://via.placeholder.com/400x750"
+        title="Kunstmarkplatz"
+        subtitle="kaufe und verkaufe deine Kunst"
+        text="Durchstöbere eine umfangreiche Sammlung von Werken.
+                  MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
+                  Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
+                  der gesamte Prozess sicher."
+      />
+      <Infos
+        align="right"
+        image="https://via.placeholder.com/400x750"
+        title="Kunstmarkplatz"
+        subtitle="kaufe und verkaufe deine Kunst"
+        text="Durchstöbere eine umfangreiche Sammlung von Werken.
+                  MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
+                  Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
+                  der gesamte Prozess sicher."
+      />
+      <Infos
+        align="left"
+        image="https://via.placeholder.com/400x750"
+        title="Kunstmarkplatz"
+        subtitle="kaufe und verkaufe deine Kunst"
+        text="Durchstöbere eine umfangreiche Sammlung von Werken.
+                  MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
+                  Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
+                  der gesamte Prozess sicher."
+      />
       <Explore />
       <Referals />
       <Download />
