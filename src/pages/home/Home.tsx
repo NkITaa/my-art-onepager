@@ -2,17 +2,21 @@ import Download from "../Download";
 import Footer from "../Footer";
 import Banner from "./Banner/Banner";
 import Explore from "./Explore";
-import Infos from "./Infos";
+import Infos from "./Infos/Infos";
 import Referals from "./Referals/Referals";
 
 function Home() {
-  const arr: string[] = ["A", "B", "C"];
+  const arr: string[] = [
+    "Durchstöbere eine umfangreiche Sammlung von Werken.",
+    "MyArt ermöglicht es dir, Kunstwerke direkt von talentierten Künstlern.",
+    "Erwerben oder selbst zum Verkauf anzubieten, wobei der gesamte Prozess sicher.",
+  ];
   return (
     <>
       <Banner />
       <Infos
         align="left"
-        image="https://via.placeholder.com/400x750"
+        image="../../../assets/artwork_mockup frontal.png"
         title="Kunstmarkplatz"
         subtitle="kaufe und verkaufe deine Kunst"
         bullets={arr}
@@ -24,7 +28,7 @@ function Home() {
       />
       <Infos
         align="right"
-        image="https://via.placeholder.com/400x750"
+        image="../../../assets/artwork_mockup diagonal right.png"
         title="Kunstmarkplatz"
         subtitle="kaufe und verkaufe deine Kunst"
         bullets={arr}
@@ -36,7 +40,7 @@ function Home() {
       />
       <Infos
         align="left"
-        image="https://via.placeholder.com/400x750"
+        image="../../../assets/artwork_mockup diagonal left.png"
         title="Kunstmarkplatz"
         subtitle="kaufe und verkaufe deine Kunst"
         bullets={arr}
