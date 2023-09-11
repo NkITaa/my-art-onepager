@@ -1,6 +1,12 @@
 import { useRef, useState } from "react";
 
-function ExtendableButton() {
+function ExtendableButton({
+  title,
+  content,
+}: {
+  title: string;
+  content: string;
+}) {
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState("0px");
   const [rotate, setRotate] = useState("transform duration-700 ease");
@@ -25,16 +31,14 @@ function ExtendableButton() {
         style={{ maxHeight: `${height}` }}
         className="self-stretch text-xl overflow-hidden transition-max-height duration-700 ease-in-out leading-loose"
       >
-        asd
+        {content}
       </div>
       <div className="self-stretch justify-start items-start gap-3 inline-flex">
         <button
           className="w-[234px] h-16 px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center gap-2 inline-flex"
           onClick={toggleAccordion}
         >
-          <div className="text-zinc-100 text-xl font-bold leading-loose">
-            mehr anzeigen
-          </div>
+          <div className="text-zinc-100 text-xl">{title}</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

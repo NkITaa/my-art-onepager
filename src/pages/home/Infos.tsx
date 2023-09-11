@@ -3,15 +3,19 @@ import ExtendableButton from "../../organisms/ExtendableButton";
 function Infos({
   title,
   subtitle,
-  text,
+  bullets,
   image,
   align,
+  buttonTitle,
+  buttonContent,
 }: {
   title: string;
   subtitle: string;
-  text: string;
+  bullets: string[];
   image: string;
   align: "left" | "right";
+  buttonTitle: string;
+  buttonContent: string;
 }) {
   return (
     <>
@@ -38,11 +42,17 @@ function Infos({
               <div className="self-stretch justify-start items-center gap-3 inline-flex">
                 <div className="w-5 h-5 relative" />
                 <div className="grow shrink basis-0 text-xl  leading-loose">
-                  {text}
+                  {bullets.map((bullet) => {
+                    return (
+                      <ul>
+                        <li>{bullet}</li>
+                      </ul>
+                    );
+                  })}
                 </div>
               </div>
             </div>
-            <ExtendableButton />
+            <ExtendableButton title={buttonTitle} content={buttonContent} />
           </div>
           {align === "right" ? (
             <div className="justify-center items-center flex">

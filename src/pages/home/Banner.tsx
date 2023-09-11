@@ -3,7 +3,7 @@ import Button from "../../organisms/Button";
 function Banner() {
   return (
     <>
-      <div className=" h-[868px] px-40 bg-slate-100 flex-col justify-center items-center inline-flex">
+      <div className=" px-40 bg-slate-100 flex-col justify-center items-center inline-flex">
         <div className="self-stretch py-16 justify-center items-center gap-16 inline-flex">
           <div className="grow shrink basis-0 py-10 flex-col justify-center items-start gap-6 inline-flex">
             <div className="self-stretch">
