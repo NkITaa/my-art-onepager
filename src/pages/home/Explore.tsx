@@ -1,8 +1,25 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "./explore.css";
+
 function Explore() {
+  const windowWidth = window.innerWidth;
+
+  var settings = {
+    dots: true,
+    arrows: false,
+    focusOnSelect: true,
+    className: "center w-screen",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: windowWidth / 400,
+  };
   return (
     <>
-      <div className="w-full px-40 bg-slate-100 flex-col justify-center items-center inline-flex">
-        <div className="self-stretch py-16 flex-col justify-center items-center gap-16 flex">
+      <div className="w-screen bg-slate-100 flex-col   inline-flex">
+        <div className="self-stretch flex-col gap-16 flex">
           <div className="self-stretch h-[110px] flex-col justify-start items-center gap-3 flex">
             <div className="self-stretch justify-center items-center gap-6 inline-flex">
               <div className="text-5xl font-bold leading-[58px]">
@@ -19,37 +36,38 @@ function Explore() {
               Browse durch die Screens von MyArt
             </div>
           </div>
-          <div className="self-stretch justify-center items-center gap-12 inline-flex">
-            <img
-              className="w-60 h-[520px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
-              src="https://via.placeholder.com/240x520"
-            />
-            <img
-              className="w-60 h-[520px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
-              src="https://via.placeholder.com/240x520"
-            />
-            <img
-              className="w-60 h-[520px] opacity-90 rounded-[32.40px] border border-black border-opacity-50"
-              src="https://via.placeholder.com/240x520"
-            />
-            <div className="w-[400px] h-[750px] flex-col justify-center items-center inline-flex">
+
+          <div className="container py-1">
+            <Slider {...settings}>
               <img
-                className="w-[400px] h-[750px] rounded-[13.60px] shadow"
-                src="https://via.placeholder.com/400x750"
+                className="w-[400px] h-[750px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
+                src="https://via.placeholder.com/240x520"
               />
-            </div>
-            <img
-              className="w-60 h-[520px] opacity-90 rounded-[32.40px] border border-black border-opacity-50"
-              src="https://via.placeholder.com/240x520"
-            />
-            <img
-              className="w-60 h-[520px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
-              src="https://via.placeholder.com/240x520"
-            />
-            <img
-              className="w-60 h-[520px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
-              src="https://via.placeholder.com/240x520"
-            />
+              <img
+                className="w-[400px] h-[750px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
+                src="https://via.placeholder.com/240x520"
+              />
+              <img
+                className="w-[400px] h-[750px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
+                src="https://via.placeholder.com/240x520"
+              />
+              <img
+                className="w-[400px] h-[750px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
+                src="https://via.placeholder.com/240x520"
+              />
+              <img
+                className="w-[400px] h-[750px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
+                src="https://via.placeholder.com/240x520"
+              />
+              <img
+                className="w-[400px] h-[750px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
+                src="https://via.placeholder.com/240x520"
+              />
+              <img
+                className="w-[400px] h-[750px] opacity-40 rounded-[32.40px] border border-black border-opacity-50"
+                src="https://via.placeholder.com/240x520"
+              />
+            </Slider>
           </div>
         </div>
       </div>
