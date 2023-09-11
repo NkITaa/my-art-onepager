@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Button from "../../organisms/Button";
 
 const navLinks = [
   {
@@ -18,10 +19,6 @@ const navLinks = [
   {
     name: "FAQ",
     link: "/faq",
-  },
-  {
-    name: "Download",
-    link: "/download",
   },
 ];
 
@@ -58,6 +55,7 @@ function Header() {
                     <Link to={navLink.link}>{navLink.name}</Link>
                   </li>
                 ))}
+                <Button link={"/download"} text="Download" />
               </ul>
             </nav>
 
@@ -78,16 +76,21 @@ function Header() {
                 className="w-full h-full fixed top-0 right-0"
                 onClick={handleMenu}
               >
-                <div className="top-0 right-0 w-[35vw] bg-white  p-10 pl-20 text-white fixed h-full ">
+                <div className="top-0 right-0 w-[35vw] bg-white text-white fixed h-full ">
                   <h2 className="mt-20 text-4xl font-semibold text-white">
                     {navLinks.map((navLink, index) => (
                       <li
                         key={index}
                         className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                       >
-                        <Link to={navLink.link}>{navLink.name}</Link>
+                        <Link to={navLink.link}>
+                          <p className="text-neutral-900 font-bold ">
+                            {navLink.name}
+                          </p>
+                        </Link>
                       </li>
                     ))}
+                    <Button link={"/download"} text="Download" />
                   </h2>
                 </div>
               </div>
