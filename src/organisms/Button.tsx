@@ -5,7 +5,7 @@ function Button({ link, text }: { link: To | undefined; text: string }) {
     <>
       {link ? (
         <Link to={link}>
-          <div className="w-[165px] h-16 px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center inline-flex">
+          <div className="w-[165px] h-16 p-4 bg-neutral-900 rounded-xl justify-center items-center inline-flex">
             <div className="text-zinc-100 text-xl font-bold leading-loose">
               {text}
             </div>

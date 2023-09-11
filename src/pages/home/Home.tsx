@@ -1,6 +1,6 @@
 import Download from "../Download";
 import Footer from "../Footer";
-import Banner from "./Banner";
+import Banner from "./Banner/Banner";
 import Explore from "./Explore";
 import Infos from "./Infos";
 import Referals from "./Referals/Referals";
