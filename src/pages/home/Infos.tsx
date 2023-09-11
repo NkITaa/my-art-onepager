@@ -42,13 +42,11 @@ function Infos({
               <div className="self-stretch justify-start items-center gap-3 inline-flex">
                 <div className="w-5 h-5 relative" />
                 <div className="grow shrink basis-0 text-xl  leading-loose">
-                  {bullets.map((bullet) => {
-                    return (
-                      <ul>
-                        <li>{bullet}</li>
-                      </ul>
-                    );
-                  })}
+                  <ul>
+                    {bullets.map((bullet, index) => {
+                      return <li key={index}>{bullet}</li>;
+                    })}
+                  </ul>
                 </div>
               </div>
             </div>
