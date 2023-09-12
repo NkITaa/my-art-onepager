@@ -1,16 +1,14 @@
 .slick-slide {
     transform: scale(0.8);
-    transition: all 0.5s ease-in-out;
 }
 
-.slick-slide img {
-    max-width: 100%;
-    transition: all 0.5s ease-in-out;
-    opacity: 0.5;
-}
-
-.slick-center img {
-  opacity: 1;
-  align-items: center;
+.slick-center img.naked {
+  opacity: 0;
   transform: scale(1.1);
+}
+
+.slick-center img.frame {
+  opacity: 1;
+  transform: scale(1.1);
+
 }
