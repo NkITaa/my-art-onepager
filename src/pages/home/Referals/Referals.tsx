@@ -1,29 +1,31 @@
 import Paper from "./Components/Paper";
 
 function Referals() {
+  const papers = [
+    {
+      link: "../../../assets/logo_FAZ.png",
+      quotation: "“Die Kunst von morgen. MyArt die neue App”",
+    },
+    {
+      link: "../../../assets/logo_der Spiegel.png",
+      quotation: "“Die Kunst von morgen. MyArt die neue App”",
+    },
+    {
+      link: "../../../assets/logo_Gea Reutlingen.png",
+      quotation: "“Die Kunst von morgen. MyArt die neue App”",
+    },
+  ];
+
   return (
     <>
-      <div className="w-full px-40 bg-white flex-col justify-center items-center inline-flex">
-        <div className="self-stretch py-16 flex-col justify-start items-center gap-16 flex">
-          <div className="self-stretch flex-col justify-start items-center flex">
-            <div className="self-stretch text-center text-5xl font-bold leading-[58px]">
-              bekannt aus folgenden Berichten
-            </div>
-          </div>
-          <div className="self-stretch justify-center items-start gap-6 inline-flex">
-            <Paper
-              link="https://via.placeholder.com/216x52"
-              quotation="“Die Kunst von morgen. MyArt die neue App”"
-            />
-            <Paper
-              link="https://via.placeholder.com/216x52"
-              quotation="“Die Kunst von morgen. MyArt die neue App”"
-            />
-            <Paper
-              link="https://via.placeholder.com/216x52"
-              quotation="“Die Kunst von morgen. MyArt die neue App”"
-            />
-          </div>
+      <div className="w-full h-full py-20 bg-red-50">
+        <div className="text-center text-5xl font-bold">
+          bekannt aus folgenden Berichten
+        </div>
+        <div className="p-20 flex flex-row flex-wrap gap-6 justify-center">
+          {papers.map((paper, index) => (
+            <Paper link={paper.link} quotation={paper.quotation} key={index} />
+          ))}
         </div>
       </div>
     </>

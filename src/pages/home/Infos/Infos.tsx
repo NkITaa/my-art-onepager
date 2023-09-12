@@ -25,7 +25,7 @@ function Infos({
           align === "left" ? "bg-white" : "bg-slate-100 "
         }`}
       >
-        <div className="flex flex-col lg:flex-row lg:justify-center items-center">
+        <div className="flex flex-row flex-wrap items-center justify-center">
           {align === "left" ? <Image image={image} /> : null}
           <Description
             title={title}
