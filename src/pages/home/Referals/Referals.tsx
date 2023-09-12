@@ -18,7 +18,7 @@ function Referals() {
 
   return (
     <>
-      <div className="w-full h-full py-20 bg-red-50">
+      <div className="w-full h-full py-20 bg-white">
         <div className="text-center text-5xl font-bold">
           bekannt aus folgenden Berichten
         </div>
