@@ -1,4 +1,4 @@
-import Footer from "../../universal_sections/Footer";
+import Footer from "../../universal_sections/footer/Footer";
 import DownloadMe from "./DownloadMe";
 
 function Download() {

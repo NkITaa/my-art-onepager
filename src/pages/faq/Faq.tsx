@@ -1,4 +1,4 @@
-import Footer from "../../universal_sections/Footer";
+import Footer from "../../universal_sections/footer/Footer";
 import Presskit from "../../universal_sections/header/Presskit";
 import Questions from "./Questions";
 
