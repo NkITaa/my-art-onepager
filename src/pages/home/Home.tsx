@@ -1,5 +1,5 @@
-import Download from "../../universal_sections/Download";
-import Footer from "../../universal_sections/footer/Footer";
+import Download from "../../universal/Download";
+import Footer from "../../universal/footer/Footer";
 import Banner from "./banner/Banner";
 import Explore from "./explore/Explore";
 import Infos from "./infos/Infos";

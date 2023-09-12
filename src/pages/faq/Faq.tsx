@@ -1,5 +1,5 @@
-import Footer from "../../universal_sections/footer/Footer";
-import Presskit from "../../universal_sections/header/Presskit";
+import Footer from "../../universal/footer/Footer";
+import Presskit from "../../universal/header/Presskit";
 import Questions from "./Questions";
 
 function Faq() {

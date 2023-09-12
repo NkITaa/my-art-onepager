@@ -1,4 +1,4 @@
-import Header from "../universal_sections/header/Header";
+import Header from "../universal/header/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home/Home";
 import AboutUs from "./about_us/AboutUs";

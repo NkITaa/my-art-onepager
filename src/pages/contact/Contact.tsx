@@ -1,5 +1,5 @@
-import Download from "../../universal_sections/Download";
-import Footer from "../../universal_sections/footer/Footer";
+import Download from "../../universal/Download";
+import Footer from "../../universal/footer/Footer";
 import Form from "./Form";
 import Request from "./Request";
 

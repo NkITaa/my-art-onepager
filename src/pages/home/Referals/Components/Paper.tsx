@@ -1,15 +1,7 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-function Paper({
-  key,
-  link,
-  quotation,
-}: {
-  link: string;
-  quotation: string;
-  key: number;
-}) {
+function Paper({ link, quotation }: { link: string; quotation: string }) {
   return (
     <>
       <Link
@@ -19,10 +11,7 @@ function Paper({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div
-          key={key}
-          className="w-[460px] h-[268px] flex-col justify-center items-center flex bg-neutral-50 rounded-2xl shadow px-12"
-        >
+        <div className="w-[460px] h-[268px] flex-col justify-center items-center flex bg-neutral-50 rounded-2xl shadow px-12">
           <div className="">
             <img className="w-[216px] h-[52px]" src={link} />
           </div>
