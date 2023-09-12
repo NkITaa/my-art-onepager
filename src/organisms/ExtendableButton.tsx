@@ -9,19 +9,13 @@ function ExtendableButton({
 }) {
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState("0px");
-  const [rotate, setRotate] = useState("transform duration-700 ease");
 
   const contentSpace = useRef(null);
 
   function toggleAccordion() {
     setActive((prevState) => !prevState);
     // @ts-ignore
-    setHeight(active ? "0px" : `${contentSpace.current.scrollHeight}px`);
-    setRotate(
-      active
-        ? "transform duration-700 ease"
-        : "transform duration-700 ease rotate-180"
-    );
+    setHeight(active ? "0px" : `${contentSpace.current.scrollHeight + 20}px`);
   }
 
   return (
@@ -29,32 +23,40 @@ function ExtendableButton({
       <div
         ref={contentSpace}
         style={{ maxHeight: `${height}` }}
-        className="self-stretch text-xl overflow-hidden transition-max-height duration-700 ease-in-out leading-loose"
+        className="self-stretch overflow-hidden transition-max-height duration-700 ease-in-out leading-loose"
       >
-        {content}
+        <p>{content}</p>
       </div>
-      <div className="self-stretch justify-start items-start gap-3 inline-flex">
-        <button
-          className="w-[234px] h-16 px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center gap-2 inline-flex"
-          onClick={toggleAccordion}
+      <button
+        className={`w-[234px] h-16 py-4 ${
+          active
+            ? "bg-neutral-50 rounded-xl border border-gray-400"
+            : "bg-neutral-900"
+        }  rounded-xl justify-center items-center gap-2 inline-flex`}
+        onClick={toggleAccordion}
+      >
+        <div className={`${active ? "" : "text-zinc-100 "}  text-xl`}>
+          {title}
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke={`${active ? "black" : "white"}`}
+          className={`${
+            active
+              ? "transform duration-700 ease rotate-180"
+              : "transform duration-700 ease"
+          } inline-block h-6 w-6`}
         >
-          <div className="text-zinc-100 text-xl">{title}</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="white"
-            className={`${rotate} inline-block h-6 w-6`}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-            />
-          </svg>
-        </button>
-      </div>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </button>
     </>
   );
 }

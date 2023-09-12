@@ -20,7 +20,11 @@ function Infos({
 }) {
   return (
     <>
-      <div className="p-4 lg:p-10 2xl:p-30">
+      <div
+        className={`p-4 lg:p-10 2xl:p-30 ${
+          align === "left" ? "bg-white" : "bg-slate-100 "
+        }`}
+      >
         <div className="flex flex-col lg:flex-row lg:justify-center items-center">
           {align === "left" ? <Image image={image} /> : null}
           <Description
