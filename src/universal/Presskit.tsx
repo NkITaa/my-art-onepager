@@ -1,4 +1,4 @@
-import Button from "../../organisms/Button";
+import Button from "../organisms/Button";
 
 function Presskit() {
   return (

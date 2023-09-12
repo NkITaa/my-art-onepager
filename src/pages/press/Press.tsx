@@ -1,5 +1,5 @@
 import Footer from "../../universal/footer/Footer";
-import Presskit from "../../universal/header/Presskit";
+import Presskit from "../../universal/Presskit";
 import Portrait from "./Portrait";
 
 function Press() {
