@@ -5,19 +5,19 @@ function Button({ link, text }: { link: To | undefined; text: string }) {
     <>
       {link ? (
         <Link to={link}>
-          <div className="w-[165px] h-16 p-4 bg-neutral-900 rounded-xl justify-center items-center inline-flex">
-            <div className="text-zinc-100 text-xl font-bold leading-loose">
+          <div className="w-32 p-4 bg-neutral-900 rounded-xl">
+            <div className="text-zinc-100 text-xl text-center font-bold">
               {text}
             </div>
           </div>
         </Link>
       ) : (
         <button
-          className="w-[165px] h-16 px-8 py-4 bg-neutral-900 rounded-xl justify-center items-center inline-flex"
+          className="p-4 bg-neutral-900 rounded-xl"
           type="submit"
           value="Submit"
         >
-          <div className="text-zinc-100 text-xl font-bold leading-loose">
+          <div className="text-zinc-100 text-xl text-center font-bold">
             {text}
           </div>
         </button>
