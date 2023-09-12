@@ -1,5 +1,5 @@
-import Description from "./Components/Description";
-import Image from "./Components/Image";
+import Description from "./components/Description";
+import Image from "./components/Image";
 
 function Infos({
   title,

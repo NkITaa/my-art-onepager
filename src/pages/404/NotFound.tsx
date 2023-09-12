@@ -1,4 +1,4 @@
-import Footer from "../Footer";
+import Footer from "../../universal_sections/Footer";
 import VOV from "./VOV";
 
 function NotFound() {

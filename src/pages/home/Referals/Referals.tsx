@@ -1,4 +1,4 @@
-import Paper from "./Components/Paper";
+import Paper from "./components/Paper";
 
 function Referals() {
   const papers = [

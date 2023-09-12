@@ -1,5 +1,5 @@
-import Download from "../Download";
-import Footer from "../Footer";
+import Download from "../../universal_sections/Download";
+import Footer from "../../universal_sections/Footer";
 import Infos from "./Infos";
 
 function AboutUs() {

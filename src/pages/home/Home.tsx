@@ -1,9 +1,9 @@
-import Download from "../Download";
-import Footer from "../Footer";
-import Banner from "./Banner/Banner";
-import Explore from "./Explore/Explore";
-import Infos from "./Infos/Infos";
-import Referals from "./Referals/Referals";
+import Download from "../../universal_sections/Download";
+import Footer from "../../universal_sections/Footer";
+import Banner from "./banner/Banner";
+import Explore from "./explore/Explore";
+import Infos from "./infos/Infos";
+import Referals from "./referals/Referals";
 
 function Home() {
   const arr: string[] = [

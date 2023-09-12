@@ -1,5 +1,5 @@
-import Picture from "./Components/Picture";
-import Sumup from "./Components/Sumup";
+import Picture from "./components/Picture";
+import Sumup from "./components/Sumup";
 
 function Banner() {
   return (

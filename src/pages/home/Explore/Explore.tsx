@@ -2,7 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./explore.css";
-import Image from "./Components/Image";
+import Image from "./components/Image";
 
 function Explore() {
   const images = [

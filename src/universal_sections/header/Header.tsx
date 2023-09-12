@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 import { useState } from "react";
-import Logo from "./Components/Logo";
-import NavLarge from "./Components/NavLarge";
-import Hamburger from "./Components/Hamburger";
-import Drawer from "./Components/Drawer";
+import Logo from "./components/Logo";
+import NavLarge from "./components/NavLarge";
+import Hamburger from "./components/Hamburger";
+import Drawer from "./components/Drawer";
 
 const navLinks = [
   {
