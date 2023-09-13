@@ -3,18 +3,14 @@ import Button from "../../organisms/Button";
 function VOV() {
   return (
     <>
-      <div className="w-full px-40 bg-slate-100 justify-center items-center inline-flex">
-        <div className="grow shrink basis-0 py-16 flex-col justify-center items-center gap-16 inline-flex">
-          <div className="self-stretch flex-col justify-center items-center gap-3 flex">
-            <div className=" text-[160px] font-bold leading-[200px]">404</div>
-            <div className="self-stretch text-center  text-2xl font-bold leading-10 tracking-widest">
-              Künstler gesucht! Hier fehlt das Meisterwerk.
-            </div>
-          </div>
-          <div className="self-stretch justify-center items-start gap-4 inline-flex">
-            <Button link="/" text="Zur Homepage" />
-            <Button link="/download" text="Melde einen Bug" />
-          </div>
+      <div className="px-10 lg:px-40 bg-slate-100 w-full py-16 text-center">
+        <div className="text-[160px] font-bold leading-[200px]">404</div>
+        <div className="text-2xl font-bold tracking-widest">
+          Künstler gesucht! Hier fehlt das Meisterwerk.
+        </div>
+        <div className="w-full justify-center items-start gap-4 inline-flex pt-20">
+          <Button link="/" text="Zur Homepage" />
+          <Button link="/download" text="Melde einen Bug" />
         </div>
       </div>
     </>
