@@ -1,15 +1,24 @@
+import {
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineWhatsApp,
+  AiOutlineMail,
+} from "react-icons/ai";
+
 function Request() {
   return (
     <>
-      <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex">
-        <div className="self-stretch flex-col justify-start items-start gap-6 flex">
-          <div className="self-stretch text-5xl font-bold leading-[58px]">
-            Kontaktiere uns!
-          </div>
-          <div className="self-stretch text-xl  leading-loose">
-            Kontaktiere uns jederzeit gerne bei Fragen/ Feedback <br />
-            oder sonstigen Anliegen auf einen unserer vielen Kontaktwege.
-          </div>
+      <div className="max-w-[668px] p-6">
+        <div className="text-5xl font-bold pb-6">Kontaktiere uns!</div>
+        <div className="text-xl">
+          Kontaktiere uns jederzeit gerne bei Fragen/ Feedback oder sonstigen
+          Anliegen auf einen unserer vielen Kontaktwege.
+        </div>
+        <div className="flex flex-row pt-3">
+          <AiOutlineFacebook className="w-8 h-8 mr-6" />
+          <AiOutlineInstagram className="w-8 h-8 mr-6" />
+          <AiOutlineWhatsApp className="w-8 h-8 mr-6" />
+          <AiOutlineMail className="w-8 h-8 mr-6" />
         </div>
       </div>
     </>

@@ -1,13 +1,13 @@
 import Download from "../../universal/Download";
 import Footer from "../../universal/footer/Footer";
-import Form from "./Form";
+import Form from "./Form/Form";
 import Request from "./Request";
 
 function Contact() {
   return (
     <>
-      <div className="w-full px-40 bg-slate-100 flex-col justify-center items-center inline-flex">
-        <div className="self-stretch py-16 justify-center items-center gap-16 inline-flex">
+      <div className="bg-slate-100 py-16 2xl:py-32 px-10">
+        <div className="flex flex-row flex-wrap items-center justify-center">
           <Request />
           <Form />
         </div>
