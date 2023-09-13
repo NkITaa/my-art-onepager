@@ -12,8 +12,8 @@ function Contact() {
           <Form />
         </div>
       </div>
-      <Download />
-      <Footer />
+      <Download slate={false} />
+      <Footer slate={true} />
     </>
   );
 }

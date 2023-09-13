@@ -1,10 +1,10 @@
 import AppstoreButton from "../organisms/AppstoreButton";
 import PlaystoreButton from "../organisms/PlaystoreButton";
 
-function Download() {
+function Download({ slate = true }: { slate?: boolean }) {
   return (
     <>
-      <div className="bg-slate-100">
+      <div className={slate ? "bg-slate-100" : "bg-white"}>
         <div className="p-16">
           <div className="pb-16">
             <div className="text-center text-2xl font-bold tracking-widest">

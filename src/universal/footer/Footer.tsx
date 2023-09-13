@@ -1,6 +1,6 @@
 import Acordeon from "./components/Acordeon";
 
-function Footer() {
+function Footer({ slate = false }: { slate?: boolean }) {
   const products = [
     { name: "Home", url: "/" },
     { name: "About Us", url: "/about" },
@@ -33,7 +33,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="p-20">
+      <footer className={`${slate ? "bg-slate-100" : "bg-white"} p-20`}>
         <div className="flex-row flex-wrap justify-evenly items-top flex gap-16">
           <Acordeon header="Produkte" infos={products} />
           <Acordeon header="Rechtliches" infos={legal} />
