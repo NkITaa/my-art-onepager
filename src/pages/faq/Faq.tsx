@@ -7,7 +7,7 @@ function Faq() {
     <>
       <Questions />
       <Presskit />
-      <Footer />
+      <Footer slate />
     </>
   );
 }
