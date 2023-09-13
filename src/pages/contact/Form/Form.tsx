@@ -11,18 +11,25 @@ function Form() {
     email: "",
     phonenumber: "",
     message: "",
+    checkbox: false,
   });
 
   const onChange = (event: {
     target: { name: string; value: string };
   }): void => {
     setValues({ ...values, [event.target.name]: event.target.value });
-    console.log(values);
+  };
+
+  const checkboxToggle = (event: {
+    target: { name: string; checked: boolean };
+  }): void => {
+    setValues({ ...values, [event.target.name]: event.target.checked });
+    console.log(event.target.checked);
   };
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    console.log("Form submitted!");
+    if (values.checkbox === false) console.log("Nah");
   };
 
   const formRows = [
@@ -83,7 +90,11 @@ function Form() {
 
         <div className="">
           <div className="flex-col flex">
-            <Checkbox />
+            <Checkbox
+              checked={values.checkbox}
+              onChange={checkboxToggle}
+              name="checkbox"
+            />
             <Button link={undefined} text="Nachricht absenden" />
           </div>
         </div>
