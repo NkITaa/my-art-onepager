@@ -1,32 +1,55 @@
+import { useState } from "react";
+
 function FormRow({
   onChange,
-  minLength,
   label,
   name,
   error,
   value,
+  email = false,
+  phone = false,
 }: {
   onChange: any;
-  minLength: number;
   label: string;
   name: string;
   error: string;
+  email?: boolean;
+  phone?: boolean;
   value: any;
 }) {
+  const [firstRender, setFirstRender] = useState(true);
+
+  const setAndOnChange = (event: {
+    target: { name: string; value: string };
+  }) => {
+    onChange(event);
+    setFirstRender(false);
+  };
+
+  const isValid = (message: string) => {
+    if (phone) return true;
+    if (email && !message.includes("@")) return false;
+    if (email && message.length < 4) return false;
+    if (message.length > 1) return true;
+    return false;
+  };
   return (
     <div className="">
       <label className="">{label}</label>
       <input
-        className="block lg:w-[328px] peer w-full p-4 bg-neutral-50 rounded-xl border text-gray-700 border-gray-200 justify-between items-center gap-2 "
+        className="block lg:w-[328px] w-full p-4 bg-neutral-50 rounded-xl border text-gray-700 border-gray-200 justify-between items-center gap-2 "
         name={name}
         type="text"
         value={value}
-        onChange={onChange}
-        minLength={minLength}
-      />{" "}
-      <p className="invisible peer-invalid:visible text-pink-600 text-sm">
-        {error}
-      </p>
+        onChange={firstRender ? setAndOnChange : onChange}
+      />
+      {firstRender ? (
+        <p className="invisible">Das ist ein Picasso</p>
+      ) : !isValid(value) ? (
+        <p className="text-pink-600 text-sm">{error}</p>
+      ) : (
+        <p className="invisible">d</p>
+      )}
     </div>
   );
 }

@@ -24,7 +24,6 @@ function Form() {
     target: { name: string; checked: boolean };
   }): void => {
     setValues({ ...values, [event.target.name]: event.target.checked });
-    console.log(event.target.checked);
   };
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
@@ -38,32 +37,30 @@ function Form() {
       name: "firstname",
       value: values.firstname,
       onChange: onChange,
-      minLength: 2,
-      error: "Please provide a valid email address.",
+      error: "Mind. 2 Zeichen.",
     },
     {
       label: "Nachname",
       name: "lastname",
       value: values.lastname,
       onChange: onChange,
-      minLength: 2,
-      error: "Please provide a valid email address.",
+      error: "Mind. 2 Zeichen.",
     },
     {
       label: "E-mail",
       name: "email",
       value: values.email,
       onChange: onChange,
-      minLength: 2,
-      error: "Please provide a valid email address.",
+      error: "Keine Valide E-mail Adresse.",
+      email: true,
     },
     {
       label: "Telefonnummer (optional)",
       name: "phonenumber",
       value: values.phonenumber,
       onChange: onChange,
-      minLength: 2,
-      error: "Please provide a valid email address.",
+      error: "",
+      phone: true,
     },
   ];
 
@@ -72,8 +69,7 @@ function Form() {
     name: "message",
     value: values.message,
     onChange: onChange,
-    minLength: 2,
-    error: "Please provide a valid email address.",
+    error: "Die Nachricht muss mindestens 10 Zeichen lang sein.",
   };
 
   return (
