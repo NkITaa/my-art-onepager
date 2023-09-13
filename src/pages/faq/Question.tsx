@@ -20,9 +20,9 @@ function Question({ question, answer }: { question: string; answer: string }) {
   return (
     <>
       <li>
-        <div className="px-40 pt-12 bg-slate-100">
+        <div className={`${active ? "bg-white" : "bg-slate-100"} px-40 pt-12 `}>
           <button
-            className="py-6 box-border cursor-pointer flex items-center"
+            className="py-6 box-border cursor-pointer flex items-center "
             onClick={toggleAccordion}
           >
             <div className="grow basis-0 text-2xl font-bold leading-10 tracking-widest">
@@ -32,13 +32,13 @@ function Question({ question, answer }: { question: string; answer: string }) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className={`${rotate} inline-block h-6 w-6`}
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M19.5 8.25l-7.5 7.5-7.5-7.5"
               />
             </svg>
