@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "../../../organisms/Button";
+import Logo from "./Logo";
 
 function Drawer({
   navLinks,
@@ -10,24 +11,27 @@ function Drawer({
 }) {
   return (
     <>
-      <div className="md:hidden z-9">
+      <div className="md:hidden z-9 ">
         <div className="w-full h-full fixed top-0 right-0" onClick={handleMenu}>
-          <div className="top-0 right-0 w-[35vw] bg-white text-white fixed h-full ">
-            <h2 className="mt-20 text-4xl font-semibold text-white">
-              {navLinks.map((navLink, index) => (
-                <li
-                  key={index}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  <Link to={navLink.link}>
-                    <p className="text-neutral-900 font-bold ">
-                      {navLink.name}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-              <Button link={"/download"} text="Download" />
-            </h2>
+          <div className="top-0 right-0 w-[35vw] bg-white fixed h-full ">
+            <div>
+              <div className="flex flex-col items-end">
+                <Logo size="small" />
+                <div className="py-12"> </div>
+                {navLinks.map((navLink, index) => (
+                  <li key={index} className="block py-3 px-6">
+                    <Link to={navLink.link}>
+                      <p className="text-neutral-900 text-[22px]">
+                        {navLink.name}
+                      </p>
+                    </Link>
+                  </li>
+                ))}
+                <div className="pt-10">
+                  <Button link={"/download"} text="Download" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 function Hamburger({
   handleMenu,
@@ -9,14 +9,14 @@ function Hamburger({
 }) {
   return (
     <>
-      <nav className="-mr-2 flex md:hidden z-10">
-        <button
-          onClick={handleMenu}
-          type="button"
-          className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-        >
-          <span className="sr-only">Open main menu</span>
-          {open ? <FaTimes /> : <FaBars />}
+      <nav className="md:hidden z-10 h-24 p-4">
+        <button onClick={handleMenu} type="button" className=" text-gray-400">
+          <span className="sr-only overflow-hidden">Open main menu</span>
+          <FaBars
+            className={`block absolute ${
+              open ? "rotate-45 opacity-0" : ""
+            } h-6 w-6 transform transition duration-700 ease-in-out`}
+          />
         </button>
       </nav>
     </>
