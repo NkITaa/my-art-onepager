@@ -4,30 +4,28 @@ import PlaystoreButton from "../../organisms/PlaystoreButton";
 function DownloadMe() {
   return (
     <>
-      <div className="w-full px-40 bg-slate-100 justify-center items-start inline-flex">
-        <div className="grow shrink basis-0 py-16 justify-center items-center gap-16 flex">
-          <div className="justify-start items-start flex">
+      <div className="w-full px-32 py-20 bg-slate-100">
+        <div className="flex flex-row flex-wrap justify-center place-items-center">
+          <img
+            className="w-[400px] h-[750px] m-8"
+            src="../../assets/artwork_mockup frontal.png"
+          />
+
+          <div className="max-w-2xl	m-8 ">
+            <div className="text-5xl font-bold leading-[58px] pb-12">
+              Downloade dir MyArt
+            </div>
+            <div className="text-2xl font-bold tracking-widest">
+              Download per QR-Code
+            </div>
             <img
-              className="w-[400px] h-[750px] rounded-2xl shadow"
-              src="https://via.placeholder.com/400x750"
+              className="w-[182px] h-[182px] mb-16"
+              src="../../assets/frame2.png"
             />
-          </div>
-          <div className="grow shrink basis-0 flex-col justify-center items-start gap-16 inline-flex">
-            <div className="self-stretch flex-col justify-center items-start gap-3 flex">
-              <div className="self-stretch text-5xl font-bold leading-[58px]">
-                Downloade dir MyArt
-              </div>
+            <div className="text-2xl font-bold tracking-widest">
+              Download in den Stores
             </div>
-            <div className="self-stretch flex-col justify-end items-start gap-3 flex">
-              <div className="self-stretch text-2xl font-bold leading-10 tracking-widest">
-                Download per QR-Code
-              </div>
-              <div className="relative"></div>
-            </div>
-            <div className="self-stretch flex-col justify-center items-start gap-3 flex">
-              <div className="self-stretch text-2xl font-bold leading-10 tracking-widest">
-                Download in den Stores
-              </div>
+            <div className="flex flex-row wrap gap-5">
               <AppstoreButton />
               <PlaystoreButton />
             </div>
