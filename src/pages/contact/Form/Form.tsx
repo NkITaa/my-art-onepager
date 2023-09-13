@@ -14,6 +14,8 @@ function Form() {
     checkbox: false,
   });
 
+  const [globalValid, setGlobalValid] = useState(true);
+
   const onChange = (event: {
     target: { name: string; value: string };
   }): void => {
@@ -28,7 +30,16 @@ function Form() {
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    if (values.checkbox === false) console.log("Nah");
+    if (
+      values.firstname.length < 2 ||
+      values.lastname.length < 2 ||
+      !values.email.includes("@") ||
+      values.email.length < 4 ||
+      values.message.length < 10 ||
+      values.checkbox === false
+    )
+      setGlobalValid(false);
+    else console.log(values);
   };
 
   const formRows = [
@@ -78,10 +89,10 @@ function Form() {
         <div className="">
           <div className="grid grid-rows-4 lg:grid-rows-2 grid-flow-col gap-4">
             {formRows.map((row, index) => (
-              <FormRow key={index} {...row} />
+              <FormRow key={index} {...row} globalValid={globalValid} />
             ))}
           </div>
-          <FormBlock {...block} />
+          <FormBlock {...block} globalValid={globalValid} />
         </div>
 
         <div className="">
@@ -90,6 +101,7 @@ function Form() {
               checked={values.checkbox}
               onChange={checkboxToggle}
               name="checkbox"
+              globalValid={globalValid}
             />
             <Button link={undefined} text="Nachricht absenden" />
           </div>

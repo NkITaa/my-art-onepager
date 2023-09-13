@@ -6,6 +6,7 @@ function FormRow({
   name,
   error,
   value,
+  globalValid,
   email = false,
   phone = false,
 }: {
@@ -16,6 +17,7 @@ function FormRow({
   email?: boolean;
   phone?: boolean;
   value: any;
+  globalValid: boolean;
 }) {
   const [firstRender, setFirstRender] = useState(true);
 
@@ -43,8 +45,14 @@ function FormRow({
         value={value}
         onChange={firstRender ? setAndOnChange : onChange}
       />
-      {firstRender ? (
-        <p className="invisible">Das ist ein Picasso</p>
+      {globalValid ? (
+        firstRender ? (
+          <p className="invisible">Das ist ein Picasso</p>
+        ) : !isValid(value) ? (
+          <p className="text-pink-600 text-sm">{error}</p>
+        ) : (
+          <p className="invisible">d</p>
+        )
       ) : !isValid(value) ? (
         <p className="text-pink-600 text-sm">{error}</p>
       ) : (

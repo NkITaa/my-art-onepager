@@ -4,25 +4,27 @@ function Checkbox({
   checked,
   onChange,
   name,
+  globalValid,
 }: {
   checked: boolean;
   onChange: any;
   name: string;
+  globalValid: boolean;
 }) {
   const [firstRender, setFirstRender] = useState(true);
-  const [checkbox, setCheckbox] = useState(false);
+  const [checkbox, setCheckbox] = useState(true);
 
   const setAndOnChange = (event: {
     target: { name: string; value: string };
   }) => {
     onChange(event);
 
-    firstRender ? setFirstRender(false) : toggleFirstRender();
+    if (firstRender) setFirstRender(false);
+    toggleFirstRender();
   };
 
   const toggleFirstRender = () => {
     setCheckbox(!checkbox);
-    return checkbox;
   };
 
   return (
@@ -41,10 +43,20 @@ function Checkbox({
           <span className=""> gelesen blyat</span>
         </div>
       </div>
-      {firstRender ? (
-        <p className="invisible text-sm">Das ist ein Picasso</p>
+      {globalValid ? (
+        firstRender ? (
+          <p className="invisible text-sm">Das ist ein Picasso</p>
+        ) : checkbox ? (
+          <p className="text-pink-600 text-sm">
+            Datenschutzerklärung muss akzeptiert werden
+          </p>
+        ) : (
+          <p className="invisible text-sm">sad</p>
+        )
       ) : checkbox ? (
-        <p className="text-pink-600 text-sm">sad</p>
+        <p className="text-pink-600 text-sm">
+          Datenschutzerklärung muss akzeptiert werden
+        </p>
       ) : (
         <p className="invisible text-sm">sad</p>
       )}
