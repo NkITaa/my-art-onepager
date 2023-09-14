@@ -25,17 +25,17 @@ function ExtendableButton({
         style={{ maxHeight: `${height}` }}
         className="self-stretch overflow-hidden transition-max-height duration-700 ease-in-out leading-loose"
       >
-        <p>{content}</p>
+        <p className="lg:text-xl">{content}</p>
       </div>
       <button
-        className={`w-[234px] h-16 py-4 ${
+        className={`w-[200px] h-12 lg:w-[234px] lg:h-16 py-4 ${
           active
             ? "bg-neutral-50 rounded-xl border border-gray-400"
             : "bg-neutral-900"
         }  rounded-xl justify-center items-center gap-2 inline-flex`}
         onClick={toggleAccordion}
       >
-        <div className={`${active ? "" : "text-zinc-100 "}  text-xl`}>
+        <div className={`${active ? "" : "text-zinc-100 "}  lg:text-xl`}>
           {title}
         </div>
         <svg

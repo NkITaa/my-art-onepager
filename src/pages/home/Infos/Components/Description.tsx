@@ -25,7 +25,7 @@ function Description({
           {bullets.map((bullet, index) => {
             return (
               <li
-                className="flex-row flex gap-3 items-baseline	pb-3"
+                className="flex-row flex gap-3 items-baseline	pb-3 lg:text-xl"
                 key={index}
               >
                 <BsPatchCheck />

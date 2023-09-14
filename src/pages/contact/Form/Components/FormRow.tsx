@@ -37,9 +37,9 @@ function FormRow({
   };
   return (
     <div className="">
-      <label className="">{label}</label>
+      <label className="lg:text-xl">{label}</label>
       <input
-        className="block lg:w-[328px] w-full p-4 bg-neutral-50 rounded-xl border text-gray-700 border-gray-200 justify-between items-center gap-2 "
+        className="block sm:w-[600px] lg:w-[328px] w-full p-4 bg-neutral-50 rounded-xl border text-gray-700 border-gray-200 justify-between items-center gap-2 "
         name={name}
         type="text"
         value={value}

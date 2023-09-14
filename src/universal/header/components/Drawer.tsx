@@ -17,17 +17,17 @@ function Drawer({
             <div>
               <div className="flex flex-col items-end">
                 <Logo size="small" />
-                <div className="py-12"> </div>
+                <div className="py-8 sm:py-12"> </div>
                 {navLinks.map((navLink, index) => (
                   <li key={index} className="block py-3 px-6">
                     <Link to={navLink.link}>
-                      <p className="text-neutral-900 text-[22px]">
+                      <p className="text-neutral-900 sm:text-[22px]">
                         {navLink.name}
                       </p>
                     </Link>
                   </li>
                 ))}
-                <div className="pt-10">
+                <div className="pt-4 sm:pt-10">
                   <Button link={"/download"} text="Download" />
                 </div>
               </div>

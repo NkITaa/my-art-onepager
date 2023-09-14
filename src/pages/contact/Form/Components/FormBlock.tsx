@@ -31,7 +31,7 @@ function FormBlock({
 
   return (
     <div className="">
-      <label className="">{label}</label>
+      <label className="lg:text-xl">{label}</label>
       <textarea
         className="block w-full resize-y h-32 p-4 bg-neutral-50 rounded-xl border text-gray-700 border-gray-200"
         name={name}

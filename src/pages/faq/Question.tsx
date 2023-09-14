@@ -50,7 +50,7 @@ function Question({ question, answer }: { question: string; answer: string }) {
           <div
             ref={contentSpace}
             style={{ maxHeight: `${height}` }}
-            className="self-stretch text-xl overflow-hidden transition-max-height duration-700 ease-in-out leading-loose"
+            className="self-stretch lg:text-xl overflow-hidden transition-max-height duration-700 ease-in-out leading-loose"
           >
             {answer}
           </div>

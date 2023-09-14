@@ -6,7 +6,7 @@ import Request from "./Request";
 function Contact() {
   return (
     <>
-      <div className="bg-slate-100 py-16 2xl:py-32 px-10">
+      <div className="bg-slate-100 lg:py-16 2xl:py-32 px-10 pt-8 pb-16">
         <div className="flex flex-row flex-wrap items-center justify-center">
           <Request />
           <Form />

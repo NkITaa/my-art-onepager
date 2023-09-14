@@ -46,7 +46,7 @@ function Questions() {
 
   return (
     <>
-      <div className="bg-slate-100 py-16">
+      <div className="bg-slate-100 pt-8 pb-32 lg:py-16">
         <div className="">
           <div className="text-[32px] lg:text-5xl font-bold grow text-center">
             Fragen & Antworten

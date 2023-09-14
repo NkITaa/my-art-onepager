@@ -23,7 +23,7 @@ function Acordeon({
                     ? { target: "_blank", rel: "noopener noreferrer " }
                     : null)}
                 >
-                  <div>{info.name}</div>
+                  <div className="lg:text-xl">{info.name}</div>
                 </Link>
               </li>
             );
