@@ -33,8 +33,8 @@ function Footer({ slate = false }: { slate?: boolean }) {
 
   return (
     <>
-      <footer className={`${slate ? "bg-slate-100" : "bg-white"} p-20`}>
-        <div className="flex-row flex-wrap justify-evenly items-top flex gap-16">
+      <footer className={`${slate ? "bg-slate-100" : "bg-white"} p-10 lg:p-20`}>
+        <div className="flex-row flex-wrap justify:start sm:justify-center items-top flex gap-16">
           <Acordeon header="Produkte" infos={products} />
           <Acordeon header="Rechtliches" infos={legal} />
           <Acordeon header="Kontaktiere Uns" infos={contact} />

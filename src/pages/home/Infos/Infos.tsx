@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Description from "./components/Description";
 import Image from "./components/Image";
 
@@ -18,15 +19,19 @@ function Infos({
   buttonTitle: string;
   buttonContent: string;
 }) {
+  const windowWidth = useRef(window.innerWidth);
+
   return (
     <>
       <div
-        className={`p-4 lg:p-10 2xl:p-30 ${
+        className={` p-4 lg:p-10 2xl:p-30 ${
           align === "left" ? "bg-white" : "bg-slate-100 "
         }`}
       >
         <div className="flex flex-row flex-wrap items-center justify-center">
-          {align === "left" ? <Image image={image} /> : null}
+          {windowWidth.current <= 1024 ? null : align === "left" ? (
+            <Image image={image} />
+          ) : null}
           <Description
             title={title}
             subtitle={subtitle}
@@ -34,7 +39,11 @@ function Infos({
             buttonTitle={buttonTitle}
             buttonContent={buttonContent}
           />
-          {align === "right" ? <Image image={image} /> : null}
+          {windowWidth.current <= 1024 ? (
+            <Image image={image} />
+          ) : align === "right" ? (
+            <Image image={image} />
+          ) : null}
         </div>
       </div>
     </>
