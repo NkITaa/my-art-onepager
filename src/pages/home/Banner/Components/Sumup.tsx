@@ -3,21 +3,21 @@ import Button from "../../../../organisms/Button";
 function Sumup() {
   return (
     <>
-      <div className="2xl:max-w-4xl 2xl:p-10 lg:max-w-lg lg:p-4 sm:max-w-2xl sm:p-4 ">
+      <div className=" sm:max-w-2xl sm:pr-4 lg:max-w-lg lg:pr-4 2xl:max-w-4xl 2xl:pr-10">
         <div className="">
-          <span className=" text-[52px] font-bold leading-[62.40px]">
+          <span className="text-[32px] lg:text-[52px] lg:leading-[62.40px] font-bold ">
             MyArt{" "}
           </span>
-          <span className="text-zinc-700 text-[52px] font-bold leading-[62.40px]">
+          <span className="text-[32px] lg:text-[52px] lg:leading-[62.40px] text-zinc-700 font-bold">
             Kunst für alle. <br />
             Entdecke und werde entdeckt.
           </span>
         </div>
-        <div className="py-4 2xlpy-10">
-          <span className="text-2xl font-bold leading-10">
+        <div className="py-4 2xl:py-10">
+          <span className="text-lg lg:text-2xl lg:leading-10 font-bold">
             MyArt demokratisiert den Kunstmarkt.{" "}
           </span>
-          <span className="text-2xl leading-10">
+          <span className="text-lg lg:text-2xl lg:leading-10">
             Wir ermöglichen es, Künstler zu werden und Werke zu entdecken.
             Gleichzeitig bieten wir eine Gemeinschaft, unterstützt unser App.
           </span>

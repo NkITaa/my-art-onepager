@@ -16,9 +16,11 @@ function Description({
 }) {
   return (
     <>
-      <div className="2xl:max-w-4xl lg:max-w-lg max-w-fit px-10 2xl:px-30">
-        <div className="text-5xl font-bold ">{title}</div>
-        <div className="text-2xl font-bold py-6 ">{subtitle}</div>
+      <div className="max-w-fit px-10 lg:max-w-lg 2xl:max-w-4xl 2xl:px-30">
+        <div className="text-[32px] lg:text-5xl font-bold ">{title}</div>
+        <div className="text-[22px] pb-3 lg:text-2xl lg:py-6 font-bold">
+          {subtitle}
+        </div>
         <ul className="pb-5">
           {bullets.map((bullet, index) => {
             return (

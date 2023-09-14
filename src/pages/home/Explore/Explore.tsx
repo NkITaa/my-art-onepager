@@ -62,8 +62,10 @@ function Explore() {
       <div className="bg-slate-100 overflow-hidden">
         <div className="py-16">
           <div className="flex-col items-center flex">
-            <div className="text-5xl font-bold ">Entdecke Kunst</div>
-            <div className="text-2xl font-bold tracking-widest pt-3">
+            <div className="text-[32px] lg:text-5xl font-bold ">
+              Entdecke Kunst
+            </div>
+            <div className="text-[22px] px-5 lg:text-2xl font-bold tracking-widest pt-3">
               Browse durch die Screens von MyArt
             </div>
           </div>
