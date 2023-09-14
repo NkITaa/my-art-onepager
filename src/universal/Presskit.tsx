@@ -15,7 +15,7 @@ function Presskit() {
           </div>
 
           <div className="">
-            <Button link="/download" text="Presseset Download" />
+            <Button link="/download" text="Presseset" />
           </div>
         </div>
       </div>

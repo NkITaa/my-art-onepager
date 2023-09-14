@@ -6,7 +6,7 @@ function Button({ link, text }: { link: To | undefined; text: string }) {
       {link ? (
         <Link className="w-32" to={link}>
           <div className=" p-4 bg-neutral-900 rounded-xl">
-            <div className="text-zinc-100 text-xl text-center font-bold">
+            <div className="text-zinc-100 lg:text-xl text-center font-bold">
               {text}
             </div>
           </div>
@@ -17,7 +17,7 @@ function Button({ link, text }: { link: To | undefined; text: string }) {
           type="submit"
           value="Submit"
         >
-          <div className="text-zinc-100 text-xl text-center font-bold">
+          <div className="text-zinc-100 lg:text-xl text-center font-bold">
             {text}
           </div>
         </button>

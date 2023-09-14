@@ -6,14 +6,14 @@ function Logo({ size = "large" }: { size?: "large" | "small" }) {
       <div className="items-end gap-4 flex p-4 ">
         <img
           src="../../assets/logo.svg"
-          className="w-16 h-16"
+          className="w-10 h-10 lg:w-16 lg:h-16"
           alt="MyArt Logo"
         ></img>
         <div>
-          <span className="text-gray-400 text-[32px] font-extrabold leading-[38.40px]">
+          <span className="text-gray-400 text-[22px] lg:text-[32px] font-extrabold leading-[38.40px]">
             My
           </span>
-          <span className="text-zinc-800 text-[32px] font-extrabold leading-[38.40px]">
+          <span className="text-zinc-800 text-[22px] lg:text-[32px] font-extrabold leading-[38.40px]">
             Art
           </span>
         </div>
