@@ -7,6 +7,7 @@ import Press from "./press/Press";
 import Faq from "./faq/Faq";
 import Download from "./download/Download";
 import NotFound from "./404/NotFound";
+import LegalTemplate from "./legal_template/LegalTemplate";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           <Route path="press" element={<Press />} />
           <Route path="faq" element={<Faq />} />
           <Route path="download" element={<Download />} />
+          <Route path="imprint" element={<LegalTemplate type="imprint" />} />
+          <Route path="privacy" element={<LegalTemplate type="privacy" />} />
+          <Route path="terms" element={<LegalTemplate type="terms" />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

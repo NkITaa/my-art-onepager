@@ -10,9 +10,9 @@ function Footer({ slate = false }: { slate?: boolean }) {
   ];
   const legal = [
     { name: "Impressum", url: "/imprint" },
-    { name: "Datenschutz Web", url: "/datapolicy" },
-    { name: "Datenschutz App", url: "/datapolicy" },
-    { name: "AGB", url: "/gtc" },
+    { name: "Datenschutz Web", url: "/privacy" },
+    { name: "Datenschutz App", url: "/privacy" },
+    { name: "AGB", url: "/terms" },
   ];
   const contact = [
     { name: "+1012 3456 789", url: "tel:+10123456789" },
