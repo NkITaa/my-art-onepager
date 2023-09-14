@@ -7,26 +7,29 @@ import Image from "./components/Image";
 function Explore() {
   const images = [
     {
-      url: "../../../assets/artwork_blog.png",
+      url: "../../../assets/carousel/1.png",
+      urlMockup: "../../../assets/carousel/mockup_1.png",
     },
     {
-      url: "../../../assets/artwork_browse.png",
+      url: "../../../assets/carousel/2.png",
+      urlMockup: "../../../assets/carousel/mockup_2.png",
     },
 
     {
-      url: "../../../assets/artwork_fav artworks.png",
+      url: "../../../assets/carousel/3.png",
+      urlMockup: "../../../assets/carousel/mockup_3.png",
     },
     {
-      url: "../../../assets/artwork_fav collections.png",
+      url: "../../../assets/carousel/4.png",
+      urlMockup: "../../../assets/carousel/mockup_4.png",
     },
     {
-      url: "../../../assets/artwork_feed.png",
+      url: "../../../assets/carousel/5.png",
+      urlMockup: "../../../assets/carousel/mockup_5.png",
     },
     {
-      url: "../../../assets/artwork_chat preview.png",
-    },
-    {
-      url: "../../../assets/artwork_chat.png",
+      url: "../../../assets/carousel/6.png",
+      urlMockup: "../../../assets/carousel/mockup_6.png",
     },
   ];
 
@@ -68,7 +71,9 @@ function Explore() {
           <div className="py-16">
             <Slider {...settings}>
               {images.map((image, index) => {
-                return <Image key={index} url={image.url} />;
+                return (
+                  <Image key={index} url={image.url} mockup={image.urlMockup} />
+                );
               })}
             </Slider>
           </div>
