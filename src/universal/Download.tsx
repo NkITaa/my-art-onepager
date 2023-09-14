@@ -7,10 +7,10 @@ function Download({ slate = true }: { slate?: boolean }) {
       <div className={slate ? "bg-slate-100" : "bg-white"}>
         <div className="p-16">
           <div className="pb-16">
-            <div className="text-center text-2xl font-bold tracking-widest">
+            <div className="text-[22px] lg:text-2xl text-center font-bold tracking-widest">
               Werde ein Teil der MyArt Community
             </div>
-            <div className="text-center text-5xl font-bold">
+            <div className="text-[32px] lg:text-5xl text-center font-bold">
               Downloade dir hier MyArt
             </div>
           </div>

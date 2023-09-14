@@ -47,8 +47,10 @@ function Questions() {
   return (
     <>
       <div className="bg-slate-100 py-16">
-        <div className="self-stretch px-40">
-          <div className="grow text-5xl font-bold">Fragen & Antworten</div>
+        <div className="">
+          <div className="text-[32px] lg:text-5xl font-bold grow text-center">
+            Fragen & Antworten
+          </div>
         </div>
         <ul className="">
           {questions.map((question, index) => (

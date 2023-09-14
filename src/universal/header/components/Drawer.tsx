@@ -13,7 +13,7 @@ function Drawer({
     <>
       <div className="md:hidden z-9 ">
         <div className="w-full h-full fixed top-0 right-0" onClick={handleMenu}>
-          <div className="top-0 right-0 w-[35vw] bg-white fixed h-full ">
+          <div className="top-0 right-0 w-[50vw] sm:w-[35vw] bg-white fixed h-full ">
             <div>
               <div className="flex flex-col items-end">
                 <Logo size="small" />

@@ -9,7 +9,9 @@ function Request() {
   return (
     <>
       <div className="max-w-[668px] p-6">
-        <div className="text-5xl font-bold pb-6">Kontaktiere uns!</div>
+        <div className="text-[32px] lg:text-5xl font-bold pb-6">
+          Kontaktiere uns!
+        </div>
         <div className="text-xl">
           Kontaktiere uns jederzeit gerne bei Fragen/ Feedback oder sonstigen
           Anliegen auf einen unserer vielen Kontaktwege.

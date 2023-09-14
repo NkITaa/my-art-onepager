@@ -18,11 +18,11 @@ function Referals() {
 
   return (
     <>
-      <div className="w-full h-full py-20 bg-white">
-        <div className="text-center text-5xl font-bold">
+      <div className="py-16 lg:py-20 w-full h-full bg-white">
+        <div className="text-[32px] lg:text-5xl font-bold text-center">
           bekannt aus folgenden Berichten
         </div>
-        <div className="p-20 flex flex-row flex-wrap gap-6 justify-center">
+        <div className="py-10 lg:py-20 flex flex-row flex-wrap gap-6 justify-center">
           {papers.map((paper, index) => (
             <Paper link={paper.link} quotation={paper.quotation} key={index} />
           ))}

@@ -26,8 +26,12 @@ function Infos({
             </div>
           ) : null}
           <div className="max-w-[668px] p-8">
-            <div className="text-5xl font-bold pb-2">{title}</div>
-            <div className="text-2xl font-bold tracking-widest">{subtitle}</div>
+            <div className="text-[32px] lg:text-5xl font-bold pb-2">
+              {title}
+            </div>
+            <div className="text-[22px] lg:text-2xl font-bold tracking-widest">
+              {subtitle}
+            </div>
             <div className="text-xl pt-6">{content}</div>
           </div>
 
