@@ -38,7 +38,7 @@ function Footer({ slate = false }: { slate?: boolean }) {
           <Acordeon header="Produkte" infos={products} />
           <Acordeon header="Rechtliches" infos={legal} />
           <Acordeon header="Kontaktiere Uns" infos={contact} />
-          <Acordeon header="Social Media" infos={socialMedia} />
+          <Acordeon header="Social Media" externalLink infos={socialMedia} />
         </div>
         <p className="text-center pt-12">
           ©{new Date().getFullYear()} MyArt. All right reserved.
