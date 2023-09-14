@@ -10,6 +10,7 @@ function Infos({
   align,
   buttonTitle,
   buttonContent,
+  imageSmall,
 }: {
   title: string;
   subtitle: string;
@@ -18,6 +19,7 @@ function Infos({
   align: "left" | "right";
   buttonTitle: string;
   buttonContent: string;
+  imageSmall: string;
 }) {
   const windowWidth = useRef(window.innerWidth);
 
@@ -42,7 +44,7 @@ function Infos({
             buttonContent={buttonContent}
           />
           {windowWidth.current <= 1024 ? (
-            <Image image={image} />
+            <Image image={imageSmall} />
           ) : align === "right" ? (
             <Image image={image} />
           ) : null}

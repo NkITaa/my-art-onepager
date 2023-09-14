@@ -13,7 +13,7 @@ function Infos({
   content: string;
   image: string;
 }) {
-  const windowWidth = useRef(window.innerWidth); //1416
+  const windowWidth = useRef(window.innerWidth);
   return (
     <>
       <div

@@ -27,7 +27,7 @@ function Drawer({
                     </Link>
                   </li>
                 ))}
-                <div className="pt-4 sm:pt-10">
+                <div className="pt-4 px-3 sm:pt-10">
                   <Button download link={"/download"} text="Download" />
                 </div>
               </div>

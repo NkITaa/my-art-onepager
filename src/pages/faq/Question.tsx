@@ -3,7 +3,6 @@ import { useRef, useState } from "react";
 function Question({ question, answer }: { question: string; answer: string }) {
   const [active, setActive] = useState(false);
   const [height, setHeight] = useState("0px");
-  const [rotate, setRotate] = useState("transform duration-700 ease");
 
   const contentSpace = useRef(null);
 
@@ -11,11 +10,6 @@ function Question({ question, answer }: { question: string; answer: string }) {
     setActive((prevState) => !prevState);
     // @ts-ignore
     setHeight(active ? "0px" : `${contentSpace.current.scrollHeight}px`);
-    setRotate(
-      active
-        ? "transform duration-700 ease"
-        : "transform duration-700 ease rotate-180"
-    );
   }
   return (
     <>
@@ -40,7 +34,11 @@ function Question({ question, answer }: { question: string; answer: string }) {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className={`${rotate} h-6 w-6 self-center `}
+              className={`${
+                active
+                  ? "duration-700 ease rotate-180 opacity-0"
+                  : "duration-700 ease "
+              } h-6 w-6 self-center`}
             >
               <path
                 strokeLinecap="round"

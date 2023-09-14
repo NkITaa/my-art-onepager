@@ -17,6 +17,7 @@ function Home() {
       <Infos
         align="left"
         image="../../../assets/artwork_mockup frontal.png"
+        imageSmall="../../../assets/carousel/mockup_1.png"
         title="Kunstmarkplatz"
         subtitle="kaufe und verkaufe deine Kunst"
         bullets={arr}
@@ -29,6 +30,7 @@ function Home() {
       <Infos
         align="right"
         image="../../../assets/artwork_mockup diagonal right.png"
+        imageSmall="../../../assets/carousel/mockup_5.png"
         title="Kunstmarkplatz"
         subtitle="kaufe und verkaufe deine Kunst"
         bullets={arr}
@@ -41,6 +43,7 @@ function Home() {
       <Infos
         align="left"
         image="../../../assets/artwork_mockup diagonal left.png"
+        imageSmall="../../../assets/carousel/mockup_4.png"
         title="Kunstmarkplatz"
         subtitle="kaufe und verkaufe deine Kunst"
         bullets={arr}
