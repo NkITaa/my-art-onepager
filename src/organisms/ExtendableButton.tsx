@@ -30,12 +30,16 @@ function ExtendableButton({
       <button
         className={`w-[200px] h-12 lg:w-[234px] lg:h-16 py-4 ${
           active
-            ? "bg-neutral-50 rounded-xl border border-gray-400"
-            : "bg-neutral-900"
+            ? "bg-neutral-50 dark:bg-neutral-900 rounded-xl border border-gray-400 dark:border-gray-600"
+            : "bg-neutral-900 dark:bg-neutral-100"
         }  rounded-xl justify-center items-center gap-2 inline-flex`}
         onClick={toggleAccordion}
       >
-        <div className={`${active ? "" : "text-zinc-100 "}  lg:text-xl`}>
+        <div
+          className={`${
+            active ? "" : "text-zinc-100 dark:text-neutral-900"
+          }  lg:text-xl`}
+        >
           {title}
         </div>
         <svg
@@ -46,9 +50,9 @@ function ExtendableButton({
           stroke={`${active ? "black" : "white"}`}
           className={`${
             active
-              ? "transform duration-700 ease rotate-180"
+              ? "transform duration-700 ease rotate-180 "
               : "transform duration-700 ease"
-          } inline-block h-6 w-6`}
+          } inline-block h-6 w-6 dark:invert`}
         >
           <path
             strokeLinecap="round"

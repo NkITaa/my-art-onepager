@@ -3,7 +3,7 @@ import Button from "../../organisms/Button";
 function VOV() {
   return (
     <>
-      <div className="px-10 lg:px-40 bg-slate-100 w-full py-16 text-center">
+      <div className="px-10 lg:px-40 bg-slate-100 dark:bg-zinc-800 w-full py-16 text-center">
         <div className="text-[120px] leading-[120px] lg:text-[160px] lg:leading-[200px] font-bold ">
           404
         </div>

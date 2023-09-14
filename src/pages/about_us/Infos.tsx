@@ -18,7 +18,9 @@ function Infos({
     <>
       <div
         className={`${
-          align === "left" ? "bg-white" : "bg-slate-100"
+          align === "left"
+            ? "bg-white dark:bg-neutral-900"
+            : "bg-slate-100 dark:bg-zinc-800"
         } p-8 lg:p-10 2xl:p-30`}
       >
         <div className="flex flex-row flex-wrap items-center justify-center">

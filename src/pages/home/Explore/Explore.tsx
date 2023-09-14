@@ -59,7 +59,7 @@ function Explore() {
   };
   return (
     <>
-      <div className="bg-slate-100 overflow-hidden">
+      <div className="bg-slate-100 dark:bg-zinc-800 overflow-hidden">
         <div className="py-16">
           <div className="flex-col items-center flex">
             <div className="text-[32px] lg:text-5xl font-bold ">

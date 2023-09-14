@@ -4,7 +4,13 @@ import PlaystoreButton from "../organisms/PlaystoreButton";
 function Download({ slate = true }: { slate?: boolean }) {
   return (
     <>
-      <div className={slate ? "bg-slate-100" : "bg-white"}>
+      <div
+        className={
+          slate
+            ? "bg-slate-100 dark:bg-zinc-800"
+            : "bg-white dark:bg-neutral-900 "
+        }
+      >
         <div className="p-16">
           <div className="pb-16">
             <div className="text-[22px] lg:text-2xl text-center font-bold tracking-widest">

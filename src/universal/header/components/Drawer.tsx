@@ -13,7 +13,7 @@ function Drawer({
     <>
       <div className="md:hidden z-9 ">
         <div className="w-full h-full fixed top-0 right-0" onClick={handleMenu}>
-          <div className="top-0 right-0 w-[50vw] sm:w-[35vw] bg-white fixed h-full ">
+          <div className="top-0 right-0 w-[50vw] sm:w-[35vw] bg-white dark:bg-neutral-900 fixed h-full ">
             <div>
               <div className="flex flex-col items-end">
                 <Logo size="small" />
@@ -21,7 +21,7 @@ function Drawer({
                 {navLinks.map((navLink, index) => (
                   <li key={index} className="block py-3 px-6">
                     <Link to={navLink.link}>
-                      <p className="text-neutral-900 sm:text-[22px]">
+                      <p className="text-neutral-900 dark:text-neutral-100 sm:text-[22px]">
                         {navLink.name}
                       </p>
                     </Link>

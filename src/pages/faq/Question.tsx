@@ -22,7 +22,9 @@ function Question({ question, answer }: { question: string; answer: string }) {
       <li>
         <div
           className={`${
-            active ? "bg-white" : "bg-slate-100"
+            active
+              ? "bg-white dark:bg-neutral-900"
+              : "bg-slate-100 dark:bg-zinc-800"
           } px-5 sm:px-20 lg:px-40 2xl:px-80 pt-12 `}
         >
           <button

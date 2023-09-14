@@ -8,7 +8,7 @@ function Sumup() {
           <span className="text-[32px] lg:text-[52px] lg:leading-[62.40px] font-bold ">
             MyArt{" "}
           </span>
-          <span className="text-[32px] lg:text-[52px] lg:leading-[62.40px] text-zinc-700 font-bold">
+          <span className="text-[32px] lg:text-[52px] lg:leading-[62.40px] text-zinc-700 dark:text-neutral-200 font-bold">
             Kunst für alle. <br />
             Entdecke und werde entdeckt.
           </span>

@@ -186,7 +186,7 @@ function LegalTemplate({ type }: { type: "imprint" | "privacy" | "terms" }) {
 
   return (
     <>
-      <div className="px-10 lg:px-40 bg-slate-100 ">
+      <div className="px-10 lg:px-40 bg-slate-100 dark:bg-zinc-800">
         <div className="basis-0 pt-8 pb-16 lg:py-16">
           <div className="text-[32px] lg:text-5xl font-bold">
             {legalTexts[type].titel}

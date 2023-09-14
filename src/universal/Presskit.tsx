@@ -3,7 +3,7 @@ import Button from "../organisms/Button";
 function Presskit() {
   return (
     <>
-      <div className="w-full px-40 bg-white">
+      <div className="w-full px-40 bg-white dark:bg-neutral-900">
         <div className="py-16 flex-col flex items-center">
           <div className="">
             <div className="text-[32px] lg:text-5xl text-center font-bold">
