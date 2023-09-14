@@ -30,6 +30,7 @@ function Form() {
 
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
+    console.log();
     if (
       values.firstname.length < 2 ||
       values.lastname.length < 2 ||

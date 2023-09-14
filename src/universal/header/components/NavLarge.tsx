@@ -15,7 +15,7 @@ function NavLarge({
               <Link to={navLink.link}>{navLink.name}</Link>
             </li>
           ))}
-          <Button link={"/download"} text="Download" />
+          <Button download link={"/download"} text="Download" />
         </ul>
       </nav>
     </>
