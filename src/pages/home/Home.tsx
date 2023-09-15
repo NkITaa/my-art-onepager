@@ -20,9 +20,11 @@ function Home() {
   ];
   return (
     <>
-      <Referals />
-      <Download />
-      <Footer />
+      <div>
+        <Referals />
+        <Download />
+        <Footer />
+      </div>
     </>
   );
 }
