@@ -3,6 +3,7 @@ import Button from "../../../organisms/Button";
 import FormBlock from "./Components/FormBlock";
 import FormRow from "./Components/FormRow";
 import Checkbox from "./Components/Checkbox";
+import { useNavigate } from "react-router-dom";
 
 function Form() {
   const [values, setValues] = useState({
@@ -15,6 +16,7 @@ function Form() {
   });
 
   const [globalValid, setGlobalValid] = useState(true);
+  const navigate = useNavigate();
 
   const onChange = (event: {
     target: { name: string; value: string };
@@ -40,7 +42,20 @@ function Form() {
       values.checkbox === false
     )
       setGlobalValid(false);
-    else console.log(values);
+    else {
+      alert(
+        "Danke für deine Nachricht! Wir melden uns so schnell wie möglich."
+      );
+      navigate("/");
+      setValues({
+        firstname: "",
+        lastname: "",
+        email: "",
+        phonenumber: "",
+        message: "",
+        checkbox: false,
+      });
+    }
   };
 
   const formRows = [
