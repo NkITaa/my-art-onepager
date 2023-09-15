@@ -1,6 +1,6 @@
 import Download from "../../universal/Download";
 import Footer from "../../universal/footer/Footer";
-import Banner from "./banner/Banner";
+//import Banner from "./banner/Banner";
 import Explore from "./explore/Explore";
 import Infos from "./infos/Infos";
 import Referals from "./referals/Referals";
@@ -19,7 +19,6 @@ function Home() {
   ];
   return (
     <>
-      <Banner />
       <Infos
         align="left"
         image={info1}
