@@ -10,6 +10,7 @@ import info2 from "../../assets/artwork_mockup diagonal right.png";
 import mockup5 from "../../assets/carousel/mockup_5.png";
 import info3 from "../../assets/artwork_mockup diagonal left.png";
 import mockup4 from "../../assets/carousel/mockup_4.png";
+import Referals from "./referals/Referals";
 
 function Home() {
   const arr: string[] = [
@@ -19,6 +20,7 @@ function Home() {
   ];
   return (
     <>
+      <Referals />
       <Download />
       <Footer />
     </>
