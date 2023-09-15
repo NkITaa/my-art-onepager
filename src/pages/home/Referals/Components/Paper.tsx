@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 function Paper({ link, quotation }: { link: string; quotation: string }) {
   return (
     <>
-      <Link
-        to={
-          "https://www.spiegel.de/fotostrecke/anleitung-buch-magic-rubik-s-cube-zauberwuerfel-tayo-braun-fotostrecke-95038.html"
-        }
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Link to={""} target="_blank" rel="noopener noreferrer">
         <div className="w-[310px] h-[160px] sm:w-[412px] lg:w-[460px] lg:h-[268px] lg:px-12 px-3 flex-col justify-center items-center flex bg-neutral-50 dark:bg-zinc-100 rounded-2xl shadow">
           <div className="">
             <img className="w-[216px] h-[52px]" src={link} />
