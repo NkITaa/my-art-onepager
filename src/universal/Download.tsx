@@ -1,5 +1,5 @@
-import AppstoreButton from "../organisms/AppstoreButton";
-import PlaystoreButton from "../organisms/PlaystoreButton";
+import AppstoreButton from "./organisms/AppstoreButton";
+import PlaystoreButton from "./organisms/PlaystoreButton";
 
 function Download({ slate = true }: { slate?: boolean }) {
   return (

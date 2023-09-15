@@ -2,6 +2,9 @@ import Download from "../../universal/Download";
 import Footer from "../../universal/footer/Footer";
 import Infos from "./Infos";
 
+import team1 from "../../assets/about_team (2).jpg";
+import team2 from "../../assets/about_team (1).jpg";
+
 function AboutUs() {
   return (
     <>
@@ -17,7 +20,7 @@ function AboutUs() {
               Seit unserer Gründung haben wir es uns zur Aufgabe gemacht, eine
               Brücke zwischen traditionellen Kunstgalerien und der digitalen
               Welt zu schlagen."
-        image="../../../assets/about_team (2).jpg"
+        image={team1}
       />
       <Infos
         align="left"
@@ -31,7 +34,7 @@ function AboutUs() {
               Seit unserer Gründung haben wir es uns zur Aufgabe gemacht, eine
               Brücke zwischen traditionellen Kunstgalerien und der digitalen
               Welt zu schlagen."
-        image="../../../assets/about_team (1).jpg"
+        image={team2}
       />
       <Download />
       <Footer />

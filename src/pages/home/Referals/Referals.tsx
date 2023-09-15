@@ -1,17 +1,20 @@
 import Paper from "./components/Paper";
+import faz from "../../../assets/logo_FAZ.png";
+import spiegel from "../../../assets/logo_der Spiegel.png";
+import gar from "../../../assets/logo_Gea Reutlingen.png";
 
 function Referals() {
   const papers = [
     {
-      link: "../../../assets/logo_FAZ.png",
+      link: faz,
       quotation: "“Die Kunst von morgen. MyArt die neue App”",
     },
     {
-      link: "../../../assets/logo_der Spiegel.png",
+      link: spiegel,
       quotation: "“Die Kunst von morgen. MyArt die neue App”",
     },
     {
-      link: "../../../assets/logo_Gea Reutlingen.png",
+      link: gar,
       quotation: "“Die Kunst von morgen. MyArt die neue App”",
     },
   ];

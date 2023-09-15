@@ -4,32 +4,45 @@ import Slider from "react-slick";
 import "./explore.css";
 import Image from "./components/Image";
 
+import carousel1 from "../../../assets/carousel/1.png";
+import carouselMockup1 from "../../../assets/carousel/mockup_1.png";
+import carousel2 from "../../../assets/carousel/2.png";
+import carouselMockup2 from "../../../assets/carousel/mockup_2.png";
+import carousel3 from "../../../assets/carousel/3.png";
+import carouselMockup3 from "../../../assets/carousel/mockup_3.png";
+import carousel4 from "../../../assets/carousel/4.png";
+import carouselMockup4 from "../../../assets/carousel/mockup_4.png";
+import carousel5 from "../../../assets/carousel/5.png";
+import carouselMockup5 from "../../../assets/carousel/mockup_5.png";
+import carousel6 from "../../../assets/carousel/6.png";
+import carouselMockup6 from "../../../assets/carousel/mockup_6.png";
+
 function Explore() {
   const images = [
     {
-      url: "../../../assets/carousel/1.png",
-      urlMockup: "../../../assets/carousel/mockup_1.png",
+      url: carousel1,
+      urlMockup: carouselMockup1,
     },
     {
-      url: "../../../assets/carousel/2.png",
-      urlMockup: "../../../assets/carousel/mockup_2.png",
+      url: carousel2,
+      urlMockup: carouselMockup2,
     },
 
     {
-      url: "../../../assets/carousel/3.png",
-      urlMockup: "../../../assets/carousel/mockup_3.png",
+      url: carousel3,
+      urlMockup: carouselMockup3,
     },
     {
-      url: "../../../assets/carousel/4.png",
-      urlMockup: "../../../assets/carousel/mockup_4.png",
+      url: carousel4,
+      urlMockup: carouselMockup4,
     },
     {
-      url: "../../../assets/carousel/5.png",
-      urlMockup: "../../../assets/carousel/mockup_5.png",
+      url: carousel5,
+      urlMockup: carouselMockup5,
     },
     {
-      url: "../../../assets/carousel/6.png",
-      urlMockup: "../../../assets/carousel/mockup_6.png",
+      url: carousel6,
+      urlMockup: carouselMockup6,
     },
   ];
 

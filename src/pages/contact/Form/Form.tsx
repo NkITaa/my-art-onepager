@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../../../organisms/Button";
+import Button from "../../../universal/organisms/Button";
 import FormBlock from "./Components/FormBlock";
 import FormRow from "./Components/FormRow";
 import Checkbox from "./Components/Checkbox";

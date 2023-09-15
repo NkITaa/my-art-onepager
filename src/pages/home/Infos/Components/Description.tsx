@@ -1,4 +1,4 @@
-import ExtendableButton from "../../../../organisms/ExtendableButton";
+import ExtendableButton from "../../../../universal/organisms/ExtendableButton";
 import { BsPatchCheck } from "react-icons/bs";
 
 function Description({

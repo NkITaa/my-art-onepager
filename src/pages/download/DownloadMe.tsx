@@ -1,5 +1,7 @@
-import AppstoreButton from "../../organisms/AppstoreButton";
-import PlaystoreButton from "../../organisms/PlaystoreButton";
+import AppstoreButton from "../../universal/organisms/AppstoreButton";
+import PlaystoreButton from "../../universal/organisms/PlaystoreButton";
+import frontal from "../../assets/artwork_mockup frontal.png";
+import frame2 from "../../assets/frame2.png";
 
 function DownloadMe() {
   return (
@@ -8,7 +10,7 @@ function DownloadMe() {
         <div className="flex flex-row flex-wrap justify-center place-items-center">
           <img
             className="w-[264px] h-[495px] lg:w-[304px] lg:h-[570px] 2xl:w-[328px] 2xl:h-[615px] m-8"
-            src="../../assets/artwork_mockup frontal.png"
+            src={frontal}
           />
 
           <div className="max-w-2xl	m-8 text-center sm:text-start">
@@ -20,7 +22,7 @@ function DownloadMe() {
             </div>
             <img
               className="w-[182px] h-[182px] mb-16 justify-self-center dark:invert lg:justify-self-start"
-              src="../../assets/frame2.png"
+              src={frame2}
             />
             <div className="text-[22px] lg:text-2xl font-bold tracking-widest">
               Download in den Stores

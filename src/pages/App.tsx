@@ -8,7 +8,7 @@ import Faq from "./faq/Faq";
 import Download from "./download/Download";
 import NotFound from "./404/NotFound";
 import LegalTemplate from "./legal_template/LegalTemplate";
-import Popup from "../popups/Popup";
+import Popup from "../universal/organisms/Popup";
 import { useEffect, useState } from "react";
 
 function App() {
