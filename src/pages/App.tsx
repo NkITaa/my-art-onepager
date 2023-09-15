@@ -8,12 +8,25 @@ import Faq from "./faq/Faq";
 import Download from "./download/Download";
 import NotFound from "./404/NotFound";
 import LegalTemplate from "./legal_template/LegalTemplate";
+import Popup from "../popups/Popup";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    let pop_status = localStorage.getItem("pop_status");
+    if (pop_status != "1") {
+      setVisible(true);
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Header />}>
+        <Route
+          path="/"
+          element={visible ? <Popup setVisible={setVisible} /> : <Header />}
+        >
           <Route index element={<Home />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="contact" element={<Contact />} />
