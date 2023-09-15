@@ -1,3 +1,12 @@
+import {
+  isIOS,
+  isIOS13,
+  isIPad13,
+  isIPhone13,
+  isIPod13,
+  isMobile,
+  isMobileSafari,
+} from "react-device-detect";
 import { Link, To } from "react-router-dom";
 
 function Button({
@@ -10,26 +19,18 @@ function Button({
   download?: boolean;
 }) {
   function getMobileOperatingSystem() {
-    var userAgent = navigator.userAgent || navigator.vendor;
-
-    // Windows Phone must come first because its UA also contains "Android"
-    if (/windows phone/i.test(userAgent)) {
-      console.log("Windows Phone");
-      return "Windows Phone";
-    }
-
-    if (/android/i.test(userAgent)) {
-      console.log("Android");
-      return "Android";
-    }
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent)) {
-      console.log("iOS");
+    if (!isMobile) return "PC";
+    else if (
+      isIOS ||
+      isMobileSafari ||
+      isIOS13 ||
+      isIPhone13 ||
+      isIPad13 ||
+      isIPod13
+    )
       return "iOS";
-    }
-    console.log("PC");
-    return "PC";
+
+    return "Android";
   }
 
   const os = getMobileOperatingSystem();
