@@ -8,7 +8,7 @@ import Faq from "./faq/Faq";
 import Download from "./download/Download";
 import NotFound from "./404/NotFound";
 import LegalTemplate from "./legal_template/LegalTemplate";
-import Popup from "../universal/organisms/Popup";
+import Cookies from "../universal/organisms/Cookies";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={visible ? <Popup setVisible={setVisible} /> : <Header />}
+          element={visible ? <Cookies setVisible={setVisible} /> : <Header />}
         >
           <Route index element={<Home />} />
           <Route path="about" element={<AboutUs />} />

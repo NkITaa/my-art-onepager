@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Popup({ setVisible }: { setVisible: any }) {
+export default function Cookies({ setVisible }: { setVisible: any }) {
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center bg-slate-100 dark:bg-zinc-800">
       <div className="w-[358px] h-[452px] p-6 lg:w-[860px] lg:h-[392px] object-center absolute lg:p-12 bg-neutral-50 dark:bg-neutral-900 rounded-2xl">
