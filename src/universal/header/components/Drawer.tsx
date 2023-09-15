@@ -20,7 +20,10 @@ function Drawer({
                 <div className="py-8 sm:py-12"> </div>
                 {navLinks.map((navLink, index) => (
                   <li key={index} className="block py-3 px-6">
-                    <Link to={navLink.link}>
+                    <Link
+                      onClick={() => window.scrollTo(0, 0)}
+                      to={navLink.link}
+                    >
                       <p className="text-neutral-900 dark:text-neutral-100 sm:text-[22px]">
                         {navLink.name}
                       </p>

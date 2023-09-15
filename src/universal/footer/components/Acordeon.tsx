@@ -21,7 +21,7 @@ function Acordeon({
                   to={info.url}
                   {...(externalLink
                     ? { target: "_blank", rel: "noopener noreferrer " }
-                    : null)}
+                    : { onClick: () => window.scrollTo(0, 0) })}
                 >
                   <div className="lg:text-xl">{info.name}</div>
                 </Link>

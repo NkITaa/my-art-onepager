@@ -12,7 +12,9 @@ function NavLarge({
         <ul className="ml-10 flex items-baseline space-x-4">
           {navLinks.map((navLink, index) => (
             <li key={index} className="text-xl leading-loose">
-              <Link to={navLink.link}>{navLink.name}</Link>
+              <Link onClick={() => window.scrollTo(0, 0)} to={navLink.link}>
+                {navLink.name}
+              </Link>
             </li>
           ))}
           <Button download link={"/download"} text="Download" />

@@ -39,6 +39,7 @@ function Button({
       {link ? (
         <Link
           className="w-32"
+          onClick={download ? () => window.scrollTo(0, 0) : () => {}}
           to={
             download
               ? os === "iOS"
