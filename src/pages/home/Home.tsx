@@ -3,7 +3,7 @@ import Footer from "../../universal/footer/Footer";
 //import Banner from "./banner/Banner";
 //import Explore from "./explore/Explore";
 //import Infos from "./infos/Infos";
-import Referals from "./referals/Referals";
+//import Referals from "./referals/Referals";
 import info1 from "../../assets/artwork_mockup frontal.png";
 import mockup1 from "../../assets/carousel/mockup_1.png";
 import info2 from "../../assets/artwork_mockup diagonal right.png";
@@ -19,7 +19,6 @@ function Home() {
   ];
   return (
     <>
-      <Referals />
       <Download />
       <Footer />
     </>
