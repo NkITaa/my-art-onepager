@@ -16,7 +16,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          bun install --production
+          bun install
           bun run build
 
       - name: Deploy
