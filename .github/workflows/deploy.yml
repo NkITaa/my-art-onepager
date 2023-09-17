@@ -3,7 +3,7 @@ name: My Art Onepager
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   ci:
