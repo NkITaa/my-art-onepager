@@ -17,7 +17,6 @@ function Home() {
   ];
   return (
     <>
-      <Referals />
       <Download />
       <Footer />
     </>
