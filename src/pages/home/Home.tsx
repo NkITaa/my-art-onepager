@@ -23,45 +23,7 @@ function Home() {
           <Picture />
         </div>
       </div>
-      <Infos
-        align="left"
-        image={info1}
-        imageSmall={mockup1}
-        title="Kunstmarkplatz"
-        subtitle="kaufe und verkaufe deine Kunst"
-        bullets={arr}
-        buttonContent="Durchstöbere eine umfangreiche Sammlung von Werken.
-        MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
-        Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
-        der gesamte Prozess sicher."
-        buttonTitle="mehr Informationen"
-      />
-      <Infos
-        align="right"
-        image={info2}
-        imageSmall={mockup5}
-        title="Kunstmarkplatz"
-        subtitle="kaufe und verkaufe deine Kunst"
-        bullets={arr}
-        buttonContent="Durchstöbere eine umfangreiche Sammlung von Werken.
-                  MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
-                  Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
-                  der gesamte Prozess sicher."
-        buttonTitle="mehr Informationen"
-      />
-      <Infos
-        align="left"
-        image={info3}
-        imageSmall={mockup4}
-        title="Kunstmarkplatz"
-        subtitle="kaufe und verkaufe deine Kunst"
-        bullets={arr}
-        buttonContent="Durchstöbere eine umfangreiche Sammlung von Werken.
-                  MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
-                  Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
-                  der gesamte Prozess sicher."
-        buttonTitle="mehr Informationen"
-      />
+
       <Footer />
     </>
   );
