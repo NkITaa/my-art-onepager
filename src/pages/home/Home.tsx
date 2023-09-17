@@ -1,6 +1,5 @@
 import Download from "../../universal/Download";
 import Footer from "../../universal/footer/Footer";
-import Banner from "./banner/Banner";
 import Explore from "./explore/Explore";
 import Infos from "./infos/Infos";
 import Referals from "./referals/Referals";
@@ -10,6 +9,8 @@ import info2 from "../../assets/artwork_mockup diagonal right.png";
 import mockup5 from "../../assets/carousel/mockup_5.png";
 import info3 from "../../assets/artwork_mockup diagonal left.png";
 import mockup4 from "../../assets/carousel/mockup_4.png";
+import Sumup from "./banner/components/Sumup";
+import Picture from "./banner/components/Picture";
 
 function Home() {
   const arr: string[] = [
@@ -19,7 +20,12 @@ function Home() {
   ];
   return (
     <>
-      <Banner />
+      <div className="bg-slate-100 dark:bg-zinc-800 p-8 lg:p-10 2xl:p-30">
+        <div className="flex flex-row flex-wrap items-center justify-center">
+          <Sumup />
+          <Picture />
+        </div>
+      </div>
       <Infos
         align="left"
         image={info1}
