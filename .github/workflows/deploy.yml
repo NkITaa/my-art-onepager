@@ -17,7 +17,7 @@ jobs:
       - name: Install and Build
         run: |
           bun install
-          bun run build
+          bun run build --base=/my/public/path/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
