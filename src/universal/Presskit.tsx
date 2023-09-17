@@ -13,10 +13,10 @@ function Presskit() {
               Für Deine Berichterstattung über MyArt
             </div>
           </div>
-
-          <div className="">
-            <Button link="/download" text="Presseset" />
-          </div>
+          <Button
+            link="https://drive.google.com/drive/folders/0B8kKmwX314STd0pqSC13Qm56Rnc?resourcekey=0-EM5_6PwyNeI34We89VEFCA"
+            text="Presseset"
+          />
         </div>
       </div>
     </>
