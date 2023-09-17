@@ -27,7 +27,6 @@ function App() {
           path="/"
           element={visible ? <Cookies setVisible={setVisible} /> : <Header />}
         >
-          <Route index element={<Home />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="press" element={<Press />} />
@@ -36,6 +35,7 @@ function App() {
           <Route path="imprint" element={<LegalTemplate type="imprint" />} />
           <Route path="privacy" element={<LegalTemplate type="privacy" />} />
           <Route path="terms" element={<LegalTemplate type="terms" />} />
+          <Route index element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
