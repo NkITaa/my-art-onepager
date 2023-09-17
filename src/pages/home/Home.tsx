@@ -1,5 +1,7 @@
 import Download from "../../universal/Download";
 import Footer from "../../universal/footer/Footer";
+import Banner from "./banner/Banner";
+import Explore from "./explore/Explore";
 import Infos from "./infos/Infos";
 import Referals from "./referals/Referals";
 import info1 from "../../assets/artwork_mockup frontal.png";
@@ -17,6 +19,48 @@ function Home() {
   ];
   return (
     <>
+      <Banner />
+      <Infos
+        align="left"
+        image={info1}
+        imageSmall={mockup1}
+        title="Kunstmarkplatz"
+        subtitle="kaufe und verkaufe deine Kunst"
+        bullets={arr}
+        buttonContent="Durchstöbere eine umfangreiche Sammlung von Werken.
+        MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
+        Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
+        der gesamte Prozess sicher."
+        buttonTitle="mehr Informationen"
+      />
+      <Infos
+        align="right"
+        image={info2}
+        imageSmall={mockup5}
+        title="Kunstmarkplatz"
+        subtitle="kaufe und verkaufe deine Kunst"
+        bullets={arr}
+        buttonContent="Durchstöbere eine umfangreiche Sammlung von Werken.
+                  MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
+                  Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
+                  der gesamte Prozess sicher."
+        buttonTitle="mehr Informationen"
+      />
+      <Infos
+        align="left"
+        image={info3}
+        imageSmall={mockup4}
+        title="Kunstmarkplatz"
+        subtitle="kaufe und verkaufe deine Kunst"
+        bullets={arr}
+        buttonContent="Durchstöbere eine umfangreiche Sammlung von Werken.
+                  MyArt ermöglicht es dir, Kunstwerke direkt von talentierten
+                  Künstlern. Erwerben oder selbst zum Verkauf anzubieten, wobei
+                  der gesamte Prozess sicher."
+        buttonTitle="mehr Informationen"
+      />
+      <Explore />
+      <Referals />
       <Download />
       <Footer />
     </>
