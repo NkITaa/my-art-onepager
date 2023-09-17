@@ -1,8 +1,5 @@
-import Download from "../../universal/Download";
 import Footer from "../../universal/footer/Footer";
-import Explore from "./explore/Explore";
 import Infos from "./infos/Infos";
-import Referals from "./referals/Referals";
 import info1 from "../../assets/artwork_mockup frontal.png";
 import mockup1 from "../../assets/carousel/mockup_1.png";
 import info2 from "../../assets/artwork_mockup diagonal right.png";
@@ -65,9 +62,6 @@ function Home() {
                   der gesamte Prozess sicher."
         buttonTitle="mehr Informationen"
       />
-      <Explore />
-      <Referals />
-      <Download />
       <Footer />
     </>
   );
