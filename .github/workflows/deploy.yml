@@ -1,4 +1,4 @@
-name: My Art Onepager Demo
+name: My Art Onepager
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/my-art-onepager-demo
+          folder: dist
 
 permissions:
   contents: write
