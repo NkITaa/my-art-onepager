@@ -24,7 +24,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="my-art-onepager/"
           element={visible ? <Cookies setVisible={setVisible} /> : <Header />}
         >
           <Route path="about" element={<AboutUs />} />

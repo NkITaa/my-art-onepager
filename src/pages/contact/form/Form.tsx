@@ -46,7 +46,7 @@ function Form() {
       alert(
         "Danke für deine Nachricht! Wir melden uns so schnell wie möglich."
       );
-      navigate("/");
+      navigate("/my-art-onepager/");
       setValues({
         firstname: "",
         lastname: "",

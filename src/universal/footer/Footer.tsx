@@ -3,22 +3,22 @@ import Acordeon from "./components/Acordeon";
 function Footer({ slate = false }: { slate?: boolean }) {
   const footer = {
     products: [
-      { name: "Home", url: "/" },
-      { name: "About Us", url: "/about" },
-      { name: "Kontakt", url: "/contact" },
-      { name: "Presse", url: "/press" },
-      { name: "FAQ", url: "/faq" },
+      { name: "Home", url: "/my-art-onepager/" },
+      { name: "About Us", url: "/my-art-onepager/about" },
+      { name: "Kontakt", url: "/my-art-onepager/contact" },
+      { name: "Presse", url: "/my-art-onepager/press" },
+      { name: "FAQ", url: "/my-art-onepager/faq" },
     ],
     legal: [
-      { name: "Impressum", url: "/imprint" },
-      { name: "Datenschutz Web", url: "/privacy" },
-      { name: "Datenschutz App", url: "/privacy" },
-      { name: "AGB", url: "/terms" },
+      { name: "Impressum", url: "/my-art-onepager/imprint" },
+      { name: "Datenschutz Web", url: "/my-art-onepager/privacy" },
+      { name: "Datenschutz App", url: "/my-art-onepager/privacy" },
+      { name: "AGB", url: "/my-art-onepager/terms" },
     ],
     contact: [
       { name: "+1012 3456 789", url: "tel:+10123456789" },
       { name: "hi@myart.de", url: "mailto:hi@myart.de" },
-      { name: "Kontaktformular", url: "/contact" },
+      { name: "Kontaktformular", url: "/my-art-onepager/contact" },
     ],
     socialMedia: [
       {

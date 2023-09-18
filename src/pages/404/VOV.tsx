@@ -11,7 +11,7 @@ function VOV() {
           Künstler gesucht! Hier fehlt das Meisterwerk.
         </div>
         <div className="w-full justify-center items-start gap-4 inline-flex pt-14 lg:pt-20">
-          <Button link="/" text="Homepage" />
+          <Button link="/my-art-onepager/" text="Homepage" />
         </div>
       </div>
     </>
