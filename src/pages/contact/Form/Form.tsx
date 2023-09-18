@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Button from "../../../universal/organisms/Button";
-import FormBlock from "./Components/FormBlock";
-import FormRow from "./Components/FormRow";
-import Checkbox from "./Components/Checkbox";
+import FormBlock from "./components/FormBlock";
+import FormRow from "./components/FormRow";
+import Checkbox from "./components/Checkbox";
 import { useNavigate } from "react-router-dom";
 
 function Form() {

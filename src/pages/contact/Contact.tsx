@@ -1,6 +1,6 @@
 import Download from "../../universal/Download";
 import Footer from "../../universal/footer/Footer";
-import Form from "./Form/Form";
+import Form from "./form/Form";
 import Request from "./Request";
 
 function Contact() {
