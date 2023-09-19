@@ -31,11 +31,7 @@ function Drawer({
                   </li>
                 ))}
                 <div className="pt-4 px-3 sm:pt-10">
-                  <Button
-                    download
-                    link={"/my-art-onepager/download"}
-                    text="Download"
-                  />
+                  <Button download link={"/download"} text="Download" />
                 </div>
               </div>
             </div>

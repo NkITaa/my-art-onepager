@@ -22,7 +22,7 @@ function Sumup() {
             Gleichzeitig bieten wir eine Gemeinschaft, unterstützt unser App.
           </span>
         </div>
-        <Button download link="/my-art-onepager/download" text="Download" />
+        <Button download link="/download" text="Download" />
       </div>
     </>
   );

@@ -17,7 +17,7 @@ function NavLarge({
               </Link>
             </li>
           ))}
-          <Button download link={"/my-art-onepager/download"} text="Download" />
+          <Button download link={"/download"} text="Download" />
         </ul>
       </nav>
     </>

@@ -4,7 +4,7 @@ import logo from "../../../assets/logo.svg";
 
 function Logo({ size = "large" }: { size?: "large" | "small" }) {
   return size === "large" ? (
-    <Link to="/my-art-onepager/">
+    <Link to="/">
       <div className="items-end gap-4 flex p-4 ">
         <img
           src={logo}
@@ -22,7 +22,7 @@ function Logo({ size = "large" }: { size?: "large" | "small" }) {
       </div>
     </Link>
   ) : (
-    <Link className="fixed" to="/my-art-onepager/">
+    <Link className="fixed" to="/">
       <div className="items-end gap-4 flex p-4 ">
         <img
           src={logo}

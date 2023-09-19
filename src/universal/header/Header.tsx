@@ -8,19 +8,19 @@ import Drawer from "./components/Drawer";
 const navLinks = [
   {
     name: "About Us",
-    link: "/my-art-onepager/about",
+    link: "/about",
   },
   {
     name: "Kontakt",
-    link: "/my-art-onepager/contact",
+    link: "/contact",
   },
   {
     name: "Presse",
-    link: "/my-art-onepager/press",
+    link: "/press",
   },
   {
     name: "FAQ",
-    link: "/my-art-onepager/faq",
+    link: "/faq",
   },
 ];
 
