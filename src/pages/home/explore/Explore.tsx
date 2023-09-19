@@ -16,6 +16,7 @@ import carousel5 from "../../../assets/carousel/5.png";
 import carouselMockup5 from "../../../assets/carousel/mockup_5.png";
 import carousel6 from "../../../assets/carousel/6.png";
 import carouselMockup6 from "../../../assets/carousel/mockup_6.png";
+import Reveal from "../Reveal";
 
 function Explore() {
   const images = [
@@ -84,13 +85,21 @@ function Explore() {
           </div>
 
           <div className="py-16">
-            <Slider {...settings}>
-              {images.map((image, index) => {
-                return (
-                  <Image key={index} url={image.url} mockup={image.urlMockup} />
-                );
-              })}
-            </Slider>
+            <Reveal
+              children={
+                <Slider {...settings}>
+                  {images.map((image, index) => {
+                    return (
+                      <Image
+                        key={index}
+                        url={image.url}
+                        mockup={image.urlMockup}
+                      />
+                    );
+                  })}
+                </Slider>
+              }
+            />
           </div>
         </div>
       </div>
