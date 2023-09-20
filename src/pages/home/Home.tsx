@@ -12,7 +12,7 @@ import info3 from "../../assets/artwork_mockup diagonal left.png";
 import mockup4 from "../../assets/carousel/mockup_4.png";
 import Reveal from "./Reveal";
 
-function Home() {
+function Home({ art }: { art: string }) {
   const arr: string[] = [
     "Durchstöbere eine umfangreiche Sammlung von Werken.",
     "MyArt ermöglicht es dir, Kunstwerke direkt von talentierten Künstlern.",
@@ -20,7 +20,7 @@ function Home() {
   ];
   return (
     <>
-      <Banner />
+      <Banner art={art} />
       <Infos
         align="left"
         image={info1}
@@ -62,7 +62,7 @@ function Home() {
       />
       <Explore />
       <Referals />
-      <Reveal children={<Download />} />
+      <Reveal children={<Download art={art} />} />
       <Reveal children={<Footer />} />
     </>
   );

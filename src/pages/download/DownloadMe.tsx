@@ -6,7 +6,7 @@ import frame2 from "../../assets/frame2.png";
 function DownloadMe() {
   return (
     <>
-      <div className="w-full py-20 bg-slate-100 dark:bg-zinc-800">
+      <div className="w-full py-20 bg-slate-100 dark:bg-zinc-800 ">
         <div className="flex flex-row flex-wrap justify-center place-items-center">
           <img
             className="w-[264px] h-[495px] lg:w-[304px] lg:h-[570px] 2xl:w-[328px] 2xl:h-[615px] m-8"
