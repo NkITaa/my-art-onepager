@@ -2,7 +2,7 @@ import Footer from "../../universal/footer/Footer";
 import Presskit from "../../universal/Presskit";
 import Portrait from "./Portrait";
 
-function Press() {
+function Press({ art }: { art: string }) {
   const content = [
     "Die MyArt Digital Solutions GmbH ist ein Technologie-Unternehmen im Kunstsektor mit Sitz in Berlin, gegründet im Jahr 2020 von den Schwestern Lena und Sophie Kunstfreund, zusammen mit Marco Bilderlieb und Julia Farbenvoll.",
     "Das Unternehmen beschäftigt heute etwa 60 talentierte Mitarbeiterinnen und Mitarbeiter an den Standorten Berlin und Hamburg. Als Gesellschafter des Unternehmens treten die Gründer in Erscheinung, während Minderheitsbeteiligungen von mehreren renommierten Kunstinvestoren gehalten werden.",
@@ -17,7 +17,7 @@ function Press() {
         subtitle="Fakten zur Berichterstattung"
         content={content}
       />
-      <Presskit />
+      <Presskit art={art} />
       <Footer slate={true} />
     </>
   );

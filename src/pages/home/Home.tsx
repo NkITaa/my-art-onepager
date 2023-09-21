@@ -11,7 +11,7 @@ import mockup5 from "../../assets/carousel/mockup_5.png";
 import info3 from "../../assets/artwork_mockup diagonal left.png";
 import mockup4 from "../../assets/carousel/mockup_4.png";
 
-function Home() {
+function Home({ art }: { art: string }) {
   const arr: string[] = [
     "Durchstöbere eine umfangreiche Sammlung von Werken.",
     "MyArt ermöglicht es dir, Kunstwerke direkt von talentierten Künstlern.",
@@ -19,7 +19,7 @@ function Home() {
   ];
   return (
     <>
-      <Banner />
+      <Banner art={art} />
       <Infos
         align="left"
         image={info1}
@@ -61,7 +61,7 @@ function Home() {
       />
       <Explore />
       <Referals />
-      <Download />
+      <Download art={art} />
       <Footer />
     </>
   );

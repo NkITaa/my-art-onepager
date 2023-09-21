@@ -1,7 +1,7 @@
 import AppstoreButton from "./organisms/AppstoreButton";
 import PlaystoreButton from "./organisms/PlaystoreButton";
 
-function Download({ slate = true }: { slate?: boolean }) {
+function Download({ slate = true, art }: { slate?: boolean; art: string }) {
   return (
     <>
       <div
@@ -11,7 +11,12 @@ function Download({ slate = true }: { slate?: boolean }) {
             : "bg-white dark:bg-neutral-900 "
         }
       >
-        <div className="p-16">
+        <div
+          className="p-16 bg-cover bg-center bg-no-repeat relative"
+          style={{
+            backgroundImage: `url(${art})`,
+          }}
+        >
           <div className="pb-16">
             <div className="text-[22px] lg:text-2xl text-center font-bold tracking-widest">
               Werde ein Teil der MyArt Community

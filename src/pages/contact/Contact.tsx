@@ -3,7 +3,7 @@ import Footer from "../../universal/footer/Footer";
 import Form from "./form/Form";
 import Request from "./Request";
 
-function Contact() {
+function Contact({ art }: { art: string }) {
   return (
     <>
       <div className="bg-slate-100 dark:bg-zinc-800 lg:py-16 2xl:py-32 px-10 pt-8 pb-16">
@@ -12,7 +12,7 @@ function Contact() {
           <Form />
         </div>
       </div>
-      <Download slate={false} />
+      <Download slate={false} art={art} />
       <Footer slate={true} />
     </>
   );
