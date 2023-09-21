@@ -72,8 +72,8 @@ function App() {
         >
           <Route path="about" element={<AboutUs art={art} />} />
           <Route path="contact" element={<Contact art={art} />} />
-          <Route path="press" element={<Press />} />
-          <Route path="faq" element={<Faq />} />
+          <Route path="press" element={<Press art={art} />} />
+          <Route path="faq" element={<Faq art={art} />} />
           <Route path="download" element={<Download />} />
           <Route path="imprint" element={<LegalTemplate type="imprint" />} />
           <Route path="privacy" element={<LegalTemplate type="privacy" />} />
