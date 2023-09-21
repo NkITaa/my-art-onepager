@@ -1,9 +1,14 @@
 import Button from "./organisms/Button";
 
-function Presskit() {
+function Presskit({ art }: { art: string }) {
   return (
     <>
-      <div className="w-full px-40 bg-white dark:bg-neutral-900">
+      <div
+        className="w-full px-40 bg-white dark:bg-neutral-900 bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `url(${art})`,
+        }}
+      >
         <div className="py-16 flex-col flex items-center">
           <div className="">
             <div className="text-[32px] lg:text-5xl text-center font-bold">

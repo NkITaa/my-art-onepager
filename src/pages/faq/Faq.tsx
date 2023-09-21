@@ -2,11 +2,11 @@ import Footer from "../../universal/footer/Footer";
 import Presskit from "../../universal/Presskit";
 import Questions from "./Questions";
 
-function Faq() {
+function Faq({ art }: { art: string }) {
   return (
     <>
       <Questions />
-      <Presskit />
+      <Presskit art={art} />
       <Footer slate />
     </>
   );

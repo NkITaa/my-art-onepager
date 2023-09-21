@@ -5,7 +5,7 @@ import Infos from "./Infos";
 import team1 from "../../assets/about_team (2).jpg";
 import team2 from "../../assets/about_team (1).jpg";
 
-function AboutUs() {
+function AboutUs({ art }: { art: string }) {
   return (
     <>
       <Infos
@@ -36,7 +36,7 @@ function AboutUs() {
               Welt zu schlagen."
         image={team2}
       />
-      <Download />
+      <Download art={art} />
       <Footer />
     </>
   );
