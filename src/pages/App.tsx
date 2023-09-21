@@ -32,9 +32,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         setArt(data.artObjects[0].webImage.url);
-        setTimeout(function () {
-          setLoading(false);
-        }, 1000);
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
