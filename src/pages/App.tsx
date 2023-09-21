@@ -10,7 +10,6 @@ import NotFound from "./404/NotFound";
 import LegalTemplate from "./legal_template/LegalTemplate";
 import Cookies from "../universal/organisms/Cookies";
 import { useEffect, useState } from "react";
-import { delay } from "framer-motion";
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -33,7 +32,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         setArt(data.artObjects[0].webImage.url);
-        delay(function () {
+        setTimeout(function () {
           setLoading(false);
         }, 1000);
       })
